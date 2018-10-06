@@ -6,7 +6,6 @@
     background-color:$primary-color;
     padding:15px;
 }
-   @import "normalize";
    @import url('https://fonts.googleapis.com/css?family=Comfortaa');
    @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 select{
@@ -317,7 +316,7 @@ ul {
     left: 0;
     bottom: 0;
     width: 100%;
-    height:60px;
+    height:50px;
     background-position: 0;
     background-image: linear-gradient(
         $gradientone-color 50%, 
@@ -417,7 +416,7 @@ ul {
         font-weight:500;
     }
     img {
-        width:100%;
+        width:80%;
         border-radius:10px;
     }
     color:white;
@@ -461,8 +460,6 @@ ul {
         padding:10px;
         height:40px;
     }
-
-
     .nutritional {
         clear:both;
         color:#ebebeb;
@@ -470,7 +467,6 @@ ul {
         font-size:12px;
         text-decoration:underline;
     }
-
     color:white;
     text-align:left;
     margin:15px;
@@ -480,13 +476,25 @@ ul {
 }
 .select-btn {
     color:white;
-    background-color:#c83626;
+    // background-color:green;
+    background-image: linear-gradient(
+    $gradientone-color 50%, 
+    $gradienttwo-color 50%
+    );
     border:none;
     padding:10px;
     height:50px;
-    width:100%;
+    width:80%;
     margin-top:10px;
-    border-radius:2px;
+    border-radius:10px;
+    font-weight:900;
+    font-size:15px;
+}
+.order-index {
+    img {
+        width:80% !important;
+        margin-top:30px;
+    }
 }
 .order-wrapper { 
     img {
@@ -934,6 +942,7 @@ input#qty {
         margin-top:10px;
         color:white;
         height:40px;
+        border:none;
     }
 }
 

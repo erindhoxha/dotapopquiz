@@ -1030,17 +1030,19 @@ textarea {
   background-color: #fefefe;
   margin: 15% auto;
   /* 15% from the top and centered */
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   border: 1px solid #888;
   width: 80%;
   /* Could be more or less, depending on screen size */ }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #000;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  opacity: 1;
+  padding: 10px; }
 
 .close:hover,
 .close:focus {
@@ -1070,5 +1072,8 @@ textarea {
     margin-top: 10px;
     color: white;
     height: 40px; }
+
+.reveal, .bomb {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

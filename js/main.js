@@ -1,8 +1,25 @@
+// ABADDON
+var abaddonNearAnswers = ["aba", "abad", "abadd"];
+var abaddonAnswers = ["abaddo", "abaddon", "Abaddon", "Abaddo"];
+
 $(".abaddon-button").on('click', function(){
-    if ($(".abaddon-input").val() == "abaddon") {
-        alertify.alert("Correnct!", "Good job you've won:");
+    for (i = 0; i < 10; i++) {
+    if ($(".abaddon-input").val() == abaddonNearAnswers[i]) {
+       $(".abaddon-input").css("border", "2px solid #f6b12b");
+    } else if ($(".abaddon-input").val() == abaddonAnswers[i]) {
+        alertify.alert("Correct!", "Nice one champion!");
     }
+}   
 })
+$(".reveal").on('click', function(){
+    $(".abaddon-input").val("Abaddon");
+    $(".abaddon-input").css("color","red");
+    alertify.alert("Correct!", "Nice one champion!");
+})
+$(".bomb").on('click', function(){
+    $(".abaddon-input").val("Abad");
+})
+// ABADDON
 
 // MODAL
 // Get the modal

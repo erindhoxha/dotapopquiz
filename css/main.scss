@@ -339,6 +339,9 @@ ul {
     color:#ebebeb;
     text-decoration:none;
 }
+.text-center {
+    text-align:center;
+}
 .tab-bar i {
     color:#ebebeb;
 }
@@ -346,65 +349,6 @@ ul {
     color:$primary-color !important;
 }
 
-/* TAB BAR */
-
-@mixin border-radius($radius) {
-    border-radius: $radius;
-}
-
-/* ==========================================================================
-   MENU
-   ========================================================================== */
-.image-left {
-    margin:5%;
-    width:35%;
-    float:left;
-}
-.image-left img {
-    width:100%;
-}
-.text-right {
-    h4 {
-        font-size:18px;
-    }
-    h6 {
-        font-size:11px;
-    }
-    h3 {
-        color:$primary-color;
-        padding-top:5px;
-    }
-    width:52%;
-    margin:9% 3% 0% 0%;
-    float:left;
-    color:white;
-    text-align:right;
-}
-
-.menu-item {
-    float:left;
-    border-bottom:1px solid #2b2b2b;
-    width:100%;
-}
-.side-image {
-    width:100%;
-}
-
-  /* ==========================================================================
-   DONBURI.HTML
-   ========================================================================== */
-  .modal {
-    a {
-        color:white;
-        padding:20px;
-    }
-    .row-language {
-        margin-top:30px;
-    }
-    background-color:white;
-    color:white;
-    text-align:center;
-}
 .order-item {
     h2 {
         font-weight:900;
@@ -422,54 +366,6 @@ ul {
     color:white;
     text-align:center;
     margin:3px;
-}
-.order-item-type {
-    .btn-pay {
-        @include button-red();
-        width:100%;
-        border:none;
-    }
-    textarea {
-        width:100%;
-    }
-    h2 {
-        font-weight:900;
-        font-size:25px;
-        padding-top:20px;
-    }
-    h5 {
-        padding:0px 0px 10px 0px;
-        font-weight:200;
-    }
-    img {
-        width:100%;
-    }
-    #type, #current-sauce {
-        width:100%;
-        color:black;
-        height:40px;
-    }
-    label {
-        padding-top:20px;
-    }
-    .add-to-order {
-        width:100%;
-        background-color:$success-color;
-        border:none;
-        color:white;
-        padding:10px;
-        height:40px;
-    }
-    .nutritional {
-        clear:both;
-        color:#ebebeb;
-        margin-top:10px;
-        font-size:12px;
-        text-decoration:underline;
-    }
-    color:white;
-    text-align:left;
-    margin:15px;
 }
 .bg-dark{
     background-color:#181818;
@@ -649,123 +545,6 @@ textarea {
 
 
  // ================================================================================================================
-            //TABLET VERSION & MOBILE TYPE.HTML
-// ================================================================================================================
-.button-input-group {
-    width:100%;
-    float:right;
-}
-
-#qty {
-    width:33%;
-    height:39px;
-    float:left;
-    margin-bottom:10px;
-    color:black;
-    text-align:center;
-    font-size:20px;
-    font-weight:900;
-}
-.minus-button {
-    background-color:$primary-color;
-    border:none;
-    font-size:20px;
-    width:33%;
-    float:left;
-    height:40px;
-}
-.plus-button {
-    background-color:$primary-color;
-    border:none;
-    font-size:20px;
-    width:33%;
-    height:40px;
-}
-@media screen and (min-width: $desktop-width) {
-
-    .image-and-description {
-        h2 {
-            font-size:40px !important;
-            font-weight:600;
-            padding-top:10px;
-        }
-        h5 {
-            font-size:26px !important;
-        }
-        text-align:center;
-    }
-    .section-form {
-        label {
-            font-size:26px;
-        }
-        select, #qty, #type {
-            height:60px !important;
-            font-size:30px !important;
-            text-align:center;
-        }
-        .minus-button {
-            height:60px;
-            font-size:40px !important;
-        }
-        .plus-button {
-            height:60px;
-            font-size:40px !important;
-        }
-        .add-to-order {
-            height:60px !important;
-            font-size:21px;
-            font-weight:900;
-        }
-        .nutritional {
-            font-size:20px;
-        }
-    }
-
-
-}
-@media screen and (min-width: $tablet-width) {
-    .section-form {
-        width:80%;
-        margin:0 auto;
-    }
-    .order-item-type {
-        .add-to-order {
-            width:100%;
-        }
-        .image-and-description {
-            h2 {
-                font-size:33px;
-                font-weight:600;
-                padding-top:10px;
-            }
-            h5 {
-                font-size:20px;
-            }
-            text-align:center;
-        }
-        img {
-        width:80%;
-        margin:20px auto;
-    }
-    width:80%;
-    margin:0 auto;
-}
-
-    .order-wrapper {
-        img {
-        width:100%;
-    }
-    text-align:left;
-}
-input#qty {
-    text-align:center;
-}
-#type, #current-sauce, #qty, .add-to-order {
-    font-size:18px;
-}
-}
-
- // ================================================================================================================
             // HOVER GROW
 // ================================================================================================================
 
@@ -840,37 +619,6 @@ input#qty {
         }
     }
 }
-/* Bubble Right */
-.active-list {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-  }
-  .active-list:before {
-    pointer-events: none;
-    position: absolute;
-    z-index: -1;
-    content: '';
-    border-style: solid;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    top: calc(50% - 10px);
-    right: -10px;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent $primary-color;
-  }
-  .active-list {
-    background-color:$primary-color;
-}
-.active-list-background-colour {
-    background-color:$primary-color;
-}
-
 
 // MODAL
 
@@ -890,16 +638,15 @@ input#qty {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #181818;
     margin: 15% auto; /* 15% from the top and centered */
     padding:0px 20px 20px 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
-
 /* The Close Button */
 .close {
-    color: #000;
+    color: #fff;
     float: right;
     font-size: 28px;
     font-weight: bold;

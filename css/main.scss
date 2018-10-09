@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 a:hover {
     text-decoration: none;
 }
-
 // VARS
 $active-color:#c83626;
 $font-stack: 'Comfortaa', Helvetica;
@@ -303,10 +302,14 @@ ul {
     padding:10px 0px 10px 0px;
 
 }
+html > #body-error {
+    background-color:black !important;
+}
 .website-wrapper {
     margin:0 auto;
     width:90%;
 }
+
 /* ==========================================================================
   TAB BAR
    ========================================================================== */
@@ -398,8 +401,8 @@ ul {
         height:100%;
     }
     padding:0;
+    cursor:pointer;
 }
-
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -619,6 +622,18 @@ textarea {
   
 }
 
+@media screen and (min-width: $desktop-width) {
+    .tab-bar {
+        display:none;
+    }
+    .modal-content {
+        width: 30% !important;
+        border:none !important;
+    }
+    .container-rendered {
+        width:800px;
+    }
+}
    // ================================================================================================================
             //TABLET VERSION TYPE-SIDE.HTML
 // ================================================================================================================

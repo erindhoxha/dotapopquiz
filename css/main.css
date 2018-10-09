@@ -258,6 +258,9 @@ ul {
   cursor: pointer;
   padding: 10px 0px 10px 0px; }
 
+html > #body-error {
+  background-color: black !important; }
+
 .website-wrapper {
   margin: 0 auto;
   width: 90%; }
@@ -334,7 +337,8 @@ ul {
   margin-top: 30px; }
 
 .order-wrapper {
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
   .order-wrapper img {
     width: 100%;
     height: 100%; }
@@ -513,6 +517,16 @@ textarea {
 
   .fa-bars {
     display: none; } }
+@media screen and (min-width: 1024px) {
+  .tab-bar {
+    display: none; }
+
+  .modal-content {
+    width: 30% !important;
+    border: none !important; }
+
+  .container-rendered {
+    width: 800px; } }
 @media screen and (max-width: 350px) {
   .order-item h5 {
     display: none; }

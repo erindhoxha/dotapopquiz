@@ -1,3 +1,4 @@
+
 // NAV BAR
 $(document).ready(function(){
     
@@ -8,8 +9,11 @@ $(document).ready(function(){
     });
 
     $(".fa-cog").click(function () {
+        $(".fa-cog").toggleClass("clicked");
         $(".support-nav").toggle("slide");
+    if ($(".fa-cog").is("clicked")) {
         $(".main-nav-phone").hide(500);
+        }
     });
 
     $(".stage").on('click', function(){
@@ -19,7 +23,8 @@ $(document).ready(function(){
     $(".answer-button").on('click', function(){
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer == currentAnswer) {
-            alert("Nice");
+            alertify.alert("Nice!", "Correct answer");
+        $(".")
             //ADD SENE
         } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
             alert(" CLOSE!");

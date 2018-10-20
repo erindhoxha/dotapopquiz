@@ -15,7 +15,6 @@ $(document).ready(function(){
         $(".main-nav-phone").hide(500);
         }
     });
-
     $(".stage").on('click', function(){
         var nr = $(this).attr('data-nr');
         loadStage(nr);
@@ -23,8 +22,14 @@ $(document).ready(function(){
     $(".answer-button").on('click', function(){
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer == currentAnswer) {
-            alertify.alert("Nice!", "Correct answer");
-            
+            $('.answer-input').val(currentAnswer);
+            $('.answer-input').prop("disabled", true);
+            $(".answer-button").css("background-color", "grey");
+            $(".answer-button").css('background-image', 'none');
+            sweetAlert('Correct!', 'Your answer is correct!', 'success');
+            $(".answer-button").prop('disabled', true);
+            $("#myModal").hide(1000);
+            stageCorrectAnswer();
             //ADD SENE
         } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
             alert(" CLOSE!");
@@ -63,6 +68,8 @@ function loadStage(stageNumber) {
     // Finally, show the stage
     modal.style.display = "block";
 }
+
+
 String.prototype.levenstein = function (string) {
     var a = this,
         b = string + "",

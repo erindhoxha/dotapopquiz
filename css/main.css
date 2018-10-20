@@ -556,7 +556,7 @@ textarea {
 /* Modal Content/Box */
 .modal-content {
   background-color: #181818;
-  margin: 15% auto;
+  margin: 5% auto;
   /* 15% from the top and centered */
   padding: 0px 20px 20px 20px;
   border: 1px solid #888;
@@ -593,7 +593,9 @@ textarea {
     width: 100%;
     height: 40px;
     margin-top: 10px;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900 !important; }
   .modal-content button {
     width: 100%;
     background-image: linear-gradient(#c92525 50%, #b32222 50%);

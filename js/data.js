@@ -1,60 +1,60 @@
 var levelData = {
     "level1": [{
-        "icon": "abaddon-01.png",
-        "image": "abaddon-01.png",
-        "answer": "abaddon"
+        "icon": "underlord-lq.png",
+        "image": "underlord-01.png",
+        "answer": "underlord"
     }, {
-        "icon": "earthspirit-01.png",
+        "icon": "earthspirit-lq.png",
         "image": "earthspirit-01.png",
         "answer": "earth spirit"
     },
     {
-        "icon": "alchemist-01.png",
+        "icon": "alchemist-lq.png",
         "image": "alchemist-01.png",
         "answer": "alchemist"
     },
     {
-        "icon": "axe-01.png",
-        "image": "axe-01.png",
-        "answer": "axe"
+        "icon": "riki-lq.png",
+        "image": "riki-01.png",
+        "answer": "riki"
     },
     {
-        "icon": "beastmaster-01.png",
-        "image": "beastmaster-01.png",
-        "answer": "beastmaster"
+        "icon": "dragonknight-lq.png",
+        "image": "dragonknight-01.png",
+        "answer": "dragon knight"
     },
     {
-        "icon": "bloodseeker-01.png",
+        "icon": "bloodseeker-lq.png",
         "image": "bloodseeker-01.png",
         "answer": "bloodseeker"
     },
     {
-        "icon": "bountyhunter-01.png",
+        "icon": "bountyhunter-lq.png",
         "image": "bountyhunter-01.png",
         "answer": "bounty hunter"
     },
     {
-        "icon": "brewmaster-01.png",
+        "icon": "brewmaster-lq.png",
         "image": "brewmaster-01.png",
         "answer": "brewmaster"
     },
     {
-        "icon": "bristleback-01.png",
+        "icon": "bristleback-lq.png",
         "image": "bristleback-01.png",
         "answer": "bristleback"
     },
     {
-        "icon": "broodmother-01.png",
+        "icon": "broodmother-lq.png",
         "image": "broodmother-01.png",
         "answer": "broodmother"
     },
     {
-        "icon": "centaur-01.png",
+        "icon": "centaur-lq.png",
         "image": "centaur-01.png",
         "answer": "centaur"
     },
     {
-        "icon": "chaosknight-01.png",
+        "icon": "chaosknight-lq.png",
         "image": "chaosknight-01.png",
         "answer": "chaos knight"
     }

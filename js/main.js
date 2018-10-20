@@ -24,7 +24,7 @@ $(document).ready(function(){
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer == currentAnswer) {
             alertify.alert("Nice!", "Correct answer");
-        $(".")
+            
             //ADD SENE
         } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
             alert(" CLOSE!");

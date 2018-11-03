@@ -128,7 +128,7 @@
     <script>
         var source = document.getElementById("stage-icon").innerHTML;
         var template = Handlebars.compile(source);
-        var html = template(levelData["level1"]);
+        var html = template(levelData["level" + currentLevel]);
         $("#stage-container").html(html);
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

@@ -117,7 +117,7 @@
     </script>
     <script>
     
-        var currentLevel = 1;
+        var currentLevel = 2;
         var currentAnswer = "";
 
     </script>
@@ -128,7 +128,7 @@
     <script>
         var source = document.getElementById("stage-icon").innerHTML;
         var template = Handlebars.compile(source);
-        var html = template(levelData["level2"]);
+        var html = template(levelData["level" + currentLevel]);
         $("#stage-container").html(html);
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

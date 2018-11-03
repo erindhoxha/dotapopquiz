@@ -22,12 +22,10 @@ $(document).ready(function(){
     $(".answer-button").on('click', function(){
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer == currentAnswer) {
+            localStorage.setItem("level" + currentLevel + "_stage" + currentStage, true);
+
             $('.answer-input').val(currentAnswer);
-            $('.answer-input').prop("disabled", true);
-            $(".answer-button").css("background-color", "grey");
-            $(".answer-button").css('background-image', 'none');
             sweetAlert('Correct!', 'Your answer is correct!', 'success');
-            $(".answer-button").prop('disabled', true);
             $("#myModal").hide(1000);
             stageCorrectAnswer();
             //ADD SENE
@@ -62,11 +60,20 @@ window.onclick = function(event) {
 }
 
 function loadStage(stageNumber) {
-    var stage = levelData["level1"][stageNumber];
+    var stage = levelData["level" + currentLevel][stageNumber];
+    window.currentStage = stageNumber;  
     currentAnswer = stage.answer;
     $(".modal-img").attr('src', "img/" + stage["image"]);
     // Finally, show the stage
     modal.style.display = "block";
+
+    var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
+
+    if (isSolved) {
+        alert("hi");
+    } else {
+        alert("not hi");
+    }
 }
 
 

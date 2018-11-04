@@ -15,10 +15,41 @@ $(document).ready(function(){
         $(".main-nav-phone").hide(500);
         }
     });
+
+
     $(".stage").on('click', function(){
         var nr = $(this).attr('data-nr');
         loadStage(nr);
     });
+
+    var input;
+   $(".btn-keyboard").on('click', function () {
+        console.log(this);
+        $(this).hide(500);
+        input += $(this).innerHTML;
+   })
+
+
+
+function loadStage(stageNumber) {
+    var stage = levelData["level" + currentLevel][stageNumber];
+    window.currentStage = stageNumber;  
+    currentAnswer = stage.answer;
+    $(".modal-img").attr('src', "img/" + stage["image"]);
+    // Finally, show the stage
+    modal.style.display = "block";
+
+    var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
+
+    if (isSolved) {
+        // alert("hi");
+    } else {
+        // alert("not hi");
+    }
+}
+
+
+
     $(".answer-button").on('click', function(){
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer == currentAnswer) {
@@ -56,23 +87,6 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
-}
-
-function loadStage(stageNumber) {
-    var stage = levelData["level" + currentLevel][stageNumber];
-    window.currentStage = stageNumber;  
-    currentAnswer = stage.answer;
-    $(".modal-img").attr('src', "img/" + stage["image"]);
-    // Finally, show the stage
-    modal.style.display = "block";
-
-    var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
-
-    if (isSolved) {
-        alert("hi");
-    } else {
-        alert("not hi");
     }
 }
 

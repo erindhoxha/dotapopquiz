@@ -596,14 +596,63 @@ textarea {
     padding: 10px;
     font-size: 18px;
     font-weight: 900 !important; }
-  .modal-content button {
+  /* .modal-content button {
     width: 100%;
     background-image: linear-gradient(#c92525 50%, #b32222 50%);
     margin-top: 10px;
     color: white;
     height: 40px;
-    border: none; }
+    border: none; } */
+.keyboard-container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align:center;
+  clear:both;
+}
 
+.keyboard-container button {
+  color:#333333;
+  font-weight:900 !important;
+  background-image:linear-gradient(#ffffff 50%, #e2e2e2 50%);
+  border:none;
+  margin:2px;
+  height:35px;
+  width:12%;
+}
+.input-check {
+  width:100%;
+}
+#answer-input {
+  border-radius:30px;
+  height:30px;
+  font-size:13px;
+  margin-bottom:10px;
+  border:none;
+  width:65%;
+  float:left;
+}
+#button-check {
+  border-radius:5px;
+  background-color:grey;
+  color:white;
+  width:33%;
+  float:left;
+  margin-top:10px;
+  margin-left:2%;
+  margin-bottom:10px;
+}
+
+.keyboard-container button:active {
+  color:black;
+}
+.keyboard-container button:focus {
+  color:black;
+}
+.keyboard-container button:active:hover {
+  color:black;
+  background-color:white;
+}
 .reveal, .bomb {
   cursor: pointer; }
 

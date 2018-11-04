@@ -108,6 +108,9 @@
             <div class="stage" data-nr="{{@index}}">
                 <div class="col-lg-4 col-xs-4 col-md-6 order-wrapper">
                     <div class="order-item bg-dark">
+                        {{#if completed}}
+                         <h1>Completed</h1>
+                        {{/if}}
                         <img src="img/{{icon}}">
                     </div>
                 </div>
@@ -131,8 +134,8 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
     </script>
     <script>
-    
-        var currentLevel = 1;
+        
+        var currentLevel = <?php echo $_GET['level']; ?>;
         var currentAnswer = "";
 
     </script>
@@ -143,8 +146,15 @@
     <script>
         var source = document.getElementById("stage-icon").innerHTML;
         var template = Handlebars.compile(source);
+        for (var i = 0; i < levelData["level" + currentLevel].length; i++) {
+            var stageCompleted = localStorage.getItem("level" + currentLevel + "_stage" + i) == 1;
+            
+            
+            levelData["level" + currentLevel][i].completed = stageCompleted;
+        }
         var html = template(levelData["level" + currentLevel]);
         $("#stage-container").html(html);
+    
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

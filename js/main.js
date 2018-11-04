@@ -36,7 +36,6 @@ $(document).ready(function () {
 
         shuffle(letters);
 
-        console.log(letters);
         var html = template(letters);
         $("#keyboard-container").html(html);
         //RENDERING KEYBOARD
@@ -62,6 +61,10 @@ $(document).ready(function () {
         }
     }
 
+    $("#btn-bomb").on('click', function(){
+
+    });
+
 
     $("#keyboard-container").on('click', '.btn-keyboard', function () {
         var letter = $(this).text();
@@ -74,12 +77,11 @@ $(document).ready(function () {
     $(".answer-button").on('click', function () {
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
-            localStorage.setItem("level" + currentLevel + "_stage" + currentStage, true);
+            localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
 
             $('.answer-input').val(currentAnswer);
             sweetAlert('Correct!', 'Your answer is correct!', 'success');
             $("#myModal").hide(1000);
-            stageCorrectAnswer();
             //ADD SENE
         } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
             alert(" CLOSE!");

@@ -1,8 +1,7 @@
-
 // NAV BAR
-$(document).ready(function(){
-    
-    $(".fa-bars").click(function(){
+$(document).ready(function () {
+
+    $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");
         $(".support-nav").hide(500);
         $(".container").show(500);
@@ -11,48 +10,66 @@ $(document).ready(function(){
     $(".fa-cog").click(function () {
         $(".fa-cog").toggleClass("clicked");
         $(".support-nav").toggle("slide");
-    if ($(".fa-cog").is("clicked")) {
-        $(".main-nav-phone").hide(500);
+        if ($(".fa-cog").is("clicked")) {
+            $(".main-nav-phone").hide(500);
         }
     });
 
 
-    $(".stage").on('click', function(){
+    $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
         loadStage(nr);
     });
 
-    var input;
-   $(".btn-keyboard").on('click', function () {
-        console.log(this);
-        $(this).hide(500);
-        input += $(this).innerHTML;
-   })
+
+    function loadStage(stageNumber) {
+
+        //RENDERING KEYBOARD
+        var source = document.getElementById("keyboard-button-template").innerHTML;
+        var template = Handlebars.compile(source);
+
+        var extraLetters = levelData["level" + currentLevel][stageNumber].extraLetters.split('');
+        var answerLetters = levelData["level" + currentLevel][stageNumber].answer.split('');
+        var letters = [...extraLetters, ...answerLetters].map(function (x) {
+            return x.toUpperCase();
+        });
+
+        shuffle(letters);
+
+        console.log(letters);
+        var html = template(letters);
+        $("#keyboard-container").html(html);
+        //RENDERING KEYBOARD
 
 
+        var stage = levelData["level" + currentLevel][stageNumber];
+        window.currentStage = stageNumber;
+        currentAnswer = stage.answer;
+        $(".modal-img").attr('src', "img/" + stage["image"]);
+        // Finally, show the stage
+        modal.style.display = "block";
 
-function loadStage(stageNumber) {
-    var stage = levelData["level" + currentLevel][stageNumber];
-    window.currentStage = stageNumber;  
-    currentAnswer = stage.answer;
-    $(".modal-img").attr('src', "img/" + stage["image"]);
-    // Finally, show the stage
-    modal.style.display = "block";
+        var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
 
-    var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
-
-    if (isSolved) {
-        // alert("hi");
-    } else {
-        // alert("not hi");
+        if (isSolved) {
+            // alert("hi");
+        } else {
+            // alert("not hi");
+        }
     }
-}
+
+
+    $("#keyboard-container").on('click', '.btn-keyboard', function () {
+        var letter = $(this).text();
+        $(this).css('visibility', 'hidden');
+        $("#answer-input").val($("#answer-input").val() + letter);
+    });
 
 
 
-    $(".answer-button").on('click', function(){
+    $(".answer-button").on('click', function () {
         var givenAnswer = $(".answer-input").val();
-        if (givenAnswer == currentAnswer) {
+        if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, true);
 
             $('.answer-input').val(currentAnswer);
@@ -68,6 +85,8 @@ function loadStage(stageNumber) {
 });
 
 
+
+
 // MODAL
 // Get the modal
 var modal = document.getElementById('myModal');
@@ -80,11 +99,11 @@ var span = document.getElementsByClassName("close")[0];
 //     modal.style.display = "block";
 // }
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
@@ -116,21 +135,36 @@ String.prototype.levenstein = function (string) {
 }
 
 // MODAL INDEX.HTML SHOW/HIDE
-$(window).on('load',function(){
+$(window).on('load', function () {
     $('#myModal-language').show();
 });
-$(".close").on('click', function(){
+$(".close").on('click', function () {
     $('#myModal-language').hide();
 })
-$(".select-button").on('click', function(){
+$(".select-button").on('click', function () {
     $('#myModal-language').hide();
 })
 // ORDER.HTML HIDE THE ORDER
-$(".btn-remove-one").on('click', function(){
+$(".btn-remove-one").on('click', function () {
     $(".pull-right").text("$4.50");
     $(".order-one").hide(300);
 })
-$(".btn-remove-two").on('click', function(){
+$(".btn-remove-two").on('click', function () {
     $(".order-two").hide(300);
     $(".pull-right").text("$0");
 })
+
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}

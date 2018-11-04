@@ -49,28 +49,10 @@
             <img class="modal-img">
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="Answer">
-            <button type="button" class="btn btn-light" id="button-check">Check</button>
+                <button type="button" class="btn btn-light answer-button" id="button-check">Check</button>
             </div>
-            <div class="keyboard-container">
+            <div class="keyboard-container" id="keyboard-container">
                 <!-- DONT FORGET TO PUT THE .MODAL-CONTENT BUTTON CSS BACK IF CHANGE MIND-->
-                <button type="button" class="btn-primary btn-keyboard">W</button>
-                <button type="button" class="btn-primary btn-keyboard">E</button>
-                <button type="button" class="btn-primary btn-keyboard">T</button>
-                <button type="button" class="btn-primary btn-keyboard">U</button>
-                <button type="button" class="btn-primary btn-keyboard">O</button>
-                <button type="button" class="btn-primary btn-keyboard">P</button>
-                <button type="button" class="btn-primary btn-keyboard">F</button>
-                <button type="button" class="btn-primary btn-keyboard">G</button>
-                <button type="button" class="btn-primary btn-keyboard">J</button>
-                <button type="button" class="btn-primary btn-keyboard">K</button>
-                <button type="button" class="btn-primary btn-keyboard">Z</button>
-                <button type="button" class="btn-primary btn-keyboard">X</button>
-                <button type="button" class="btn-primary btn-keyboard">C</button>
-                <button type="button" class="btn-primary btn-keyboard">B</button>
-                <button type="button" class="btn-primary btn-keyboard">N</button>
-                <button type="button" class="btn-primary btn-keyboard">N</button>
-                <button type="button" class="btn-primary btn-keyboard">K</button>
-                <button type="button" class="btn-primary btn-keyboard">K</button>
             </div>
                 <!-- <input type="text" class="answer-input" placeholder="Answer">
                 <button type="submit" class="answer-button" value="submit">Submit</button> -->
@@ -132,6 +114,14 @@
             </div>
         {{/each}}
     </script>
+
+<script id="keyboard-button-template" type="text/x-handlebars-template">
+        {{#each this}}
+        <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
+        {{/each}}
+        <button type="button" class="btn-danger btn-md">Clear</button>
+    </script>
+
     <!-- HANDLEBARS -->
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>

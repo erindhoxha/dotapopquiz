@@ -62,7 +62,6 @@
     <div class="container">
         <div class="row">
             <?php for ($i = 1; $i < 5; $i++) {
-
             ?>
             <a href="level.php?level=<?php echo $i?>">
                 <div class="col-lg-6 col-xs-12 col-md-6 order-wrapper order-index" data-nr="0">
@@ -70,11 +69,11 @@
                         <img src="img/level<?php echo $i?>.png">
                         <button type="button" class="select-btn hvr-back-pulse levelOneButton">Play</button>
                     </div>
+                </div>
             </a>
             <?php } ?>
-        </div>
     </div>
-    </div>
+</div>
 
     <!-- TAB BAR -->
     <ul class="tab-bar">

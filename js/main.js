@@ -47,6 +47,7 @@ $(document).ready(function () {
 
         var stage = levelData["level" + currentLevel][stageNumber];
         window.currentStage = stageNumber;
+        
         currentAnswer = stage.answer;
         $(".modal-img").attr('src', "img/" + stage["image"]);
         // Finally, show the stage

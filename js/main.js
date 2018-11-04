@@ -41,6 +41,10 @@ $(document).ready(function () {
         $("#keyboard-container").html(html);
         //RENDERING KEYBOARD
 
+        $("#btn-clear").on('click', function(){
+            $("#keyboard-container .btn-keyboard").css('visibility', 'visible');
+            $("#answer-input").val("");
+        });
 
         var stage = levelData["level" + currentLevel][stageNumber];
         window.currentStage = stageNumber;

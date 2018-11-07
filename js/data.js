@@ -3,72 +3,72 @@ var levelData = {
         "icon": "underlord-lq.png",
         "image": "underlord-01.png",
         "answer": "underlord",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "ier"
     }, {
         "icon": "earthspirit-lq.png",
         "image": "earthspirit-01.png",
         "answer": "earth spirit",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "aier"
     },
     {
         "icon": "alchemist-lq.png",
         "image": "alchemist-01.png",
         "answer": "alchemist",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "qwanier"
     },
     {
         "icon": "riki-lq.png",
         "image": "riki-01.png",
         "answer": "riki",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "aznier"
     },
     {
         "icon": "dragonknight-lq.png",
         "image": "dragonknight-01.png",
         "answer": "dragon knight",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "ier"
     },
     {
         "icon": "weaver-lq.png",
         "image": "weaver-01.png",
         "answer": "weaver",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "aipier"
     },
     {
         "icon": "bountyhunter-lq.png",
         "image": "bountyhunter-01.png",
         "answer": "bounty hunter",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": "wnr"
     },
     {
         "icon": "vengefulspirit-lq.png",
         "image": "vengefulspirit-01.png",
         "answer": "vengeful spirit",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": ""
     },
     {
         "icon": "trollwarlord-lq.png",
         "image": "trollwarlord-01.png",
         "answer": "troll warlord",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": ""
     },
     {
         "icon": "broodmother-lq.png",
         "image": "broodmother-01.png",
         "answer": "broodmother",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": ""
     },
     {
         "icon": "centaur-lq.png",
         "image": "centaur-01.png",
         "answer": "centaur",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": ""
     },
     {
         "icon": "terrorblade-lq.png",
         "image": "terrorblade-01.png",
         "answer": "terrorblade",
-        "extraLetters": "aipmqwnier"
+        "extraLetters": ""
     }],
 
     "level2": [{

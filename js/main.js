@@ -1,8 +1,8 @@
 // NAV BAR
 
+
+
 $(document).ready(function () {
-    $(body).css('background-color', 'blue !important');
-    alert('hi');
     $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");
         $(".support-nav").hide(500);
@@ -56,13 +56,27 @@ $(document).ready(function () {
         modal.style.display = "block";
 
         var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
-           console.log(isSolved);
-           console.log("Hi");
-                //   if (isSolved) {
-                //       alert("hi");
-                //   } else {
-                //       alert("not hi");
-                //   }
+                  if (isSolved) {
+
+
+                    
+                      $("#answer-input").val(currentAnswer.toUpperCase());
+                      $("#answer-input").css('width', '100%');
+                      $("#answer-input").prop('disabled', true);
+                      $("#answer-input").css('border', '2px solid green');
+
+                      var buttons = document.querySelectorAll('.btn-keyboard');
+                      for (var i = 0; i < buttons.length; i++) {
+                          buttons[i].style.display = "none";
+                      }
+                      $("#button-check").hide();
+                      $("#btn-clear").hide();
+                  } else {
+                      $("#answer-input").val("");
+                      $("#answer-input").css('border', 'none');
+                      $("#button-check").show();
+                      $("#answer-input").css('width', '65%');
+                  }
 }    
 
     // ENTER CLICK
@@ -71,7 +85,7 @@ $(document).ready(function () {
     var input = document.getElementById("answer-input");
 
     // Execute a function when the user releases a key on the keyboard
-    input.addEventListener("keyup", function (event) {
+    window.addEventListener("keyup", function (event) {
         // Cancel the default action, if needed
         event.preventDefault();
         // Number 13 is the "Enter" key on the keyboard
@@ -97,13 +111,14 @@ $(document).ready(function () {
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
-
             $('.answer-input').val(currentAnswer);
             sweetAlert('Correct!', 'Your answer is correct!', 'success');
             $("#myModal").hide(1000);
             //ADD SENE
         } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
-            alert(" CLOSE!");
+            input.style.border = "2px solid #EEC93D";
+        } else {
+            input.style.border = "none";            
         }
         // PER ANSWER
     })

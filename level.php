@@ -48,7 +48,7 @@
             </div>
             <img class="modal-img">
             <div class="input-check">
-            <input type="text" class="answer-input" id="answer-input" placeholder="Answer">
+            <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
                 <button type="button" class="btn  btn-light answer-button" id="button-check">Check</button>
             </div>
             <div class="keyboard-container" id="keyboard-container">
@@ -58,6 +58,7 @@
                 <button type="submit" class="answer-button" value="submit">Submit</button> -->
         </div>
     </div>
+</div>
 
     <!-- FIRST NAV BAR -->
     <ul class="main-nav">
@@ -106,7 +107,7 @@
     <script id="stage-icon" type="text/x-handlebars-template">
         {{#each this}}
             <div class="stage" data-nr="{{@index}}">
-                <div class="col-lg-4 col-xs-4 col-md-6 order-wrapper">
+                <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
                     <div class="order-item bg-dark">
                         {{#if completed}}
                          <h1>Completed</h1>

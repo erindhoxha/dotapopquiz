@@ -61,8 +61,7 @@
     <!-- DONBURI ROW -->
     <div class="container">
         <div class="row">
-            <?php for ($i = 1; $i < 5; $i++) {
-            ?>
+            <?php for ($i = 1; $i < 5; $i++) { ?>
             <a href="level.php?level=<?php echo $i?>">
                 <div class="col-lg-6 col-xs-12 col-md-6 order-wrapper order-index" data-nr="0">
                     <div class="order-item bg-dark">

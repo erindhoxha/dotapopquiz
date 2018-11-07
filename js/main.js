@@ -65,7 +65,7 @@ $(document).ready(function () {
                       $("#answer-input").css('width', '100%');
                       $("#answer-input").prop('disabled', true);
                       $("#answer-input").css('border', '2px solid green');
-                      
+                      $(".fa-check-circle").css('display', 'block');
 
                       var buttons = document.querySelectorAll('.btn-keyboard');
                       for (var i = 0; i < buttons.length; i++) {
@@ -74,6 +74,7 @@ $(document).ready(function () {
                       $("#button-check").hide();
                       $("#btn-clear").hide();
                   } else {
+                      $(".fa-check-circle").css('display', 'none');
                       $("#answer-input").val("");
                       $("#answer-input").css('border', 'none');
                       $("#button-check").show();

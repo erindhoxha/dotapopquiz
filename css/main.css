@@ -783,7 +783,6 @@ textarea {
 .keyboard-container button:hover {
   color:#333;
 }
-
 .input-check {
   width: 100%;
   position:relative;
@@ -794,6 +793,7 @@ textarea {
   color:green !important;
   top:5px;
   right: -2px;
+  display:none;
 }
 
 #answer-input {

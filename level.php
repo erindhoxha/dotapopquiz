@@ -50,6 +50,7 @@
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
                 <button type="button" class="btn  btn-light answer-button" id="button-check">Check</button>
+                <i class="fas fa-check-circle check-circle"></i>
             </div>
             <div class="keyboard-container" id="keyboard-container">
                 <!-- DONT FORGET TO PUT THE .MODAL-CONTENT BUTTON CSS BACK IF CHANGE MIND-->
@@ -149,8 +150,6 @@
         var template = Handlebars.compile(source);
         for (var i = 0; i < levelData["level" + currentLevel].length; i++) {
             var stageCompleted = localStorage.getItem("level" + currentLevel + "_stage" + i) == 1;
-            
-            
             levelData["level" + currentLevel][i].completed = stageCompleted;
         }
         var html = template(levelData["level" + currentLevel]);

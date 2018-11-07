@@ -786,6 +786,14 @@ textarea {
 
 .input-check {
   width: 100%;
+  position:relative;
+}
+.fa-check-circle {
+  position:absolute;
+  background-color:transparent !important;
+  color:green !important;
+  top:5px;
+  right: -2px;
 }
 
 #answer-input {

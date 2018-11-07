@@ -20,6 +20,7 @@ $(document).ready(function () {
 
     $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
+        // console.log($(this).attr('data-nr'));
         loadStage(nr);
     });
 
@@ -59,11 +60,12 @@ $(document).ready(function () {
                   if (isSolved) {
 
 
-                    
+                        
                       $("#answer-input").val(currentAnswer.toUpperCase());
                       $("#answer-input").css('width', '100%');
                       $("#answer-input").prop('disabled', true);
                       $("#answer-input").css('border', '2px solid green');
+                      
 
                       var buttons = document.querySelectorAll('.btn-keyboard');
                       for (var i = 0; i < buttons.length; i++) {

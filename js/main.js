@@ -64,21 +64,23 @@ $(document).ready(function () {
                       $("#answer-input").val(currentAnswer.toUpperCase());
                       $("#answer-input").css('width', '100%');
                       $("#answer-input").prop('disabled', true);
-                      $("#answer-input").css('border', '2px solid green');
+                      $("#answer-input").css('border', '2px solid #46A413');
                       $(".fa-check-circle").css('display', 'block');
 
-                      var buttons = document.querySelectorAll('.btn-keyboard');
-                      for (var i = 0; i < buttons.length; i++) {
-                          buttons[i].style.display = "none";
-                      }
+                        var buttons = document.querySelectorAll('.btn-keyboard');
+                        for (var i = 0; i < buttons.length; i++) {
+                            buttons[i].style.display = "none";
+                        }
                       $("#button-check").hide();
                       $("#btn-clear").hide();
                   } else {
+
                       $(".fa-check-circle").css('display', 'none');
                       $("#answer-input").val("");
                       $("#answer-input").css('border', 'none');
                       $("#button-check").show();
                       $("#answer-input").css('width', '65%');
+
                   }
 }    
 
@@ -193,3 +195,33 @@ function shuffle(a) {
     }
     return a;
 }
+
+// Disclosure for FAQs
+
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+    
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            var setClasses = !this.classList.contains('active-acc');
+            setClass(acc, 'active-acc', 'remove');
+            setClass(panel, 'show', 'remove');
+    
+            if (setClasses) {
+                this.classList.toggle("active-acc");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+    
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
+    
+    });

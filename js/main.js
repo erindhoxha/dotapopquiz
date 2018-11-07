@@ -1,5 +1,7 @@
 // NAV BAR
+
 $(document).ready(function () {
+    $(body).css('background-color', 'blue !important');
     alert('hi');
     $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");

@@ -1,6 +1,6 @@
 // NAV BAR
 $(document).ready(function () {
-
+    alert('hi');
     $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");
         $(".support-nav").hide(500);

@@ -71,8 +71,9 @@
                         <button type="button" class="select-btn hvr-back-pulse levelOneButton">Play</button>
                     </div>
             </a>
-            <?php } ?>
         </div>
+            <?php } ?>
+
     </div>
     </div>
 

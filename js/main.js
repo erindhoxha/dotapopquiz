@@ -53,14 +53,31 @@ $(document).ready(function () {
         modal.style.display = "block";
 
         var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
+           console.log(isSolved);
+           console.log("Hi");
+                //   if (isSolved) {
+                //       alert("hi");
+                //   } else {
+                //       alert("not hi");
+                //   }
+}    
 
-        if (isSolved) {
-            // alert("hi");
-        } else {
-            // alert("not hi");
+    // ENTER CLICK
+
+    // Get the input field
+    var input = document.getElementById("answer-input");
+
+    // Execute a function when the user releases a key on the keyboard
+    input.addEventListener("keyup", function (event) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // Trigger the button element with a click
+            document.getElementById("button-check").click();
         }
-    }
-
+    });
+  
     $("#btn-bomb").on('click', function(){
 
     });
@@ -71,7 +88,6 @@ $(document).ready(function () {
         $(this).css('visibility', 'hidden');
         $("#answer-input").val($("#answer-input").val() + letter);
     });
-
 
 
     $(".answer-button").on('click', function () {
@@ -140,25 +156,7 @@ String.prototype.levenstein = function (string) {
     return m[b.length][a.length];
 }
 
-// MODAL INDEX.HTML SHOW/HIDE
-$(window).on('load', function () {
-    $('#myModal-language').show();
-});
-$(".close").on('click', function () {
-    $('#myModal-language').hide();
-})
-$(".select-button").on('click', function () {
-    $('#myModal-language').hide();
-})
-// ORDER.HTML HIDE THE ORDER
-$(".btn-remove-one").on('click', function () {
-    $(".pull-right").text("$4.50");
-    $(".order-one").hide(300);
-})
-$(".btn-remove-two").on('click', function () {
-    $(".order-two").hide(300);
-    $(".pull-right").text("$0");
-})
+
 
 /**
  * Shuffles array in place.

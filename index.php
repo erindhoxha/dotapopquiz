@@ -38,10 +38,10 @@
         <a href="#">
             <li>Games</li>
         </a>
-        <a href="#">
+        <a href="index.php">
             <li>Play</li>
         </a>
-        <a href="#">
+        <a href="about.php">
             <li>About</li>
         </a>
     </ul>
@@ -77,9 +77,9 @@
 
     <!-- TAB BAR -->
     <ul class="tab-bar">
-        <li><a href="#"><i class="fas fa-gamepad"></i><br>Info</a></li>
-        <li><a href="#"><i class="fas fa-play"></i><br>Play</a></li>
-        <li><a href="#"><i class="fas fa-question-circle"></i><br>About</a></li>
+        <li><a href="info.php"><i class="fas fa-gamepad"></i><br>Info</a></li>
+        <li><a href="index.php"><i class="fas fa-play"></i><br>Play</a></li>
+        <li><a href="about.php"><i class="fas fa-question-circle"></i><br>About</a></li>
     </ul>
     <!-- TAB BAR -->
 

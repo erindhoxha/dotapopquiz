@@ -20,8 +20,13 @@ $(document).ready(function () {
 
     $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
+        // console.log($(this).attr('data-nr'));
         loadStage(nr);
     });
+
+    $("#button-check").on('click', function() { 
+        $("#button-check").toggleClass('bounceIn');
+    })
 
 
     function loadStage(stageNumber) {
@@ -47,6 +52,25 @@ $(document).ready(function () {
             $("#answer-input").val("");
         });
 
+        $("#btn-remove").on('click', function() {
+            var str = $("#answer-input").val();
+            var lastChar = str.substr(str.length - 1);
+            console.log(lastChar);
+            $("button:contains('" + lastChar + "')").attr('style', 'visibility: visible')
+           str =  str.slice(0, -1);
+           $("#answer-input").val(str);
+           $("#btn-remove").css('background-image', 'none');
+           $("#btn-remove").css('background-color', 'none');
+
+        });
+
+        $("#btn-space").on('click', function() { 
+            var space = " ";
+            $("#answer-input").val($("#answer-input").val() + space);
+        });
+
+        $(".btn-keyboard:contains(' ')").attr('style', 'display: none');
+
         var stage = levelData["level" + currentLevel][stageNumber];
         window.currentStage = stageNumber;
         
@@ -56,24 +80,28 @@ $(document).ready(function () {
         modal.style.display = "block";
 
         var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
-                  if (isSolved) {
 
+                  if (isSolved) {
                       $("#answer-input").val(currentAnswer.toUpperCase());
                       $("#answer-input").css('width', '100%');
                       $("#answer-input").prop('disabled', true);
-                      $("#answer-input").css('border', '2px solid green');
-
-                      var buttons = document.querySelectorAll('.btn-keyboard');
-                      for (var i = 0; i < buttons.length; i++) {
-                          buttons[i].style.display = "none";
-                      }
+                      $("#answer-input").css('border', '2px solid #46A413');
+                      $(".fa-check-circle").css('display', 'block');
+                        var buttons = document.querySelectorAll('.btn-keyboard');
+                        for (var i = 0; i < buttons.length; i++) {
+                            buttons[i].style.display = "none";
+                        }
                       $("#button-check").hide();
+                      $("#btn-remove").hide();
                       $("#btn-clear").hide();
                   } else {
+
+                      $(".fa-check-circle").css('display', 'none');
                       $("#answer-input").val("");
                       $("#answer-input").css('border', 'none');
                       $("#button-check").show();
                       $("#answer-input").css('width', '65%');
+
                   }
 }    
 
@@ -113,10 +141,17 @@ $(document).ready(function () {
             sweetAlert('Correct!', 'Your answer is correct!', 'success');
             $("#myModal").hide(1000);
             //ADD SENE
-        } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
-            input.style.border = "2px solid #EEC93D";
+        // } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
+        //     input.style.border = "2px solid #EEC93D";
         } else {
-            input.style.border = "none";            
+            function highlight(obj){
+                var orig = obj.style.border;
+                obj.style.border = '2px solid #d9534f';
+                setTimeout(function(){
+                     obj.style.border = orig;
+                }, 1000);
+             }   
+             highlight(input);       
         }
         // PER ANSWER
     })
@@ -188,3 +223,33 @@ function shuffle(a) {
     }
     return a;
 }
+
+// Disclosure for FAQs
+
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+    var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+    
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            var setClasses = !this.classList.contains('active-acc');
+            setClass(acc, 'active-acc', 'remove');
+            setClass(panel, 'show', 'remove');
+    
+            if (setClasses) {
+                this.classList.toggle("active-acc");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+    
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
+    
+    });

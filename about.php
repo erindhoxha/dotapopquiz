@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sweetalert2.css">
-    <link rel="stylesheet" href="css/animate.css">
-
 
     <!-- CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
@@ -38,10 +36,10 @@
             <div class="row" style="clear:both;">
                 <div class="col-12">
                     <div class="col-xs-4 text-center">
-                       <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"> <i class="fab fa-facebook-square" style="background-color:#3d64b1"></i> </a>
+                        <i class="fab fa-facebook-square" style="background-color:#3d64b1"></i>
                     </div>
                     <div class="col-xs-4 text-center">
-                        <i class="fas fa-bomb bomb" id="btn-bomb" style="background-color:#3d64b1"></i>
+                        <i class="fas fa-bomb bomb" style="background-color:#3d64b1"></i>
                     </div>
                     <div class="col-xs-4 text-center">
                         <i class="fas fa-eye reveal" style="background-color:#3d64b1"></i>
@@ -49,19 +47,10 @@
                 </div>
             </div>
             <img class="modal-img">
-            <div class="input-check">
-            <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
-                <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
-                <i class="fas fa-check-circle check-circle"></i>
-            </div>
-            <div class="keyboard-container" id="keyboard-container">
-                <!-- DONT FORGET TO PUT THE .MODAL-CONTENT BUTTON CSS BACK IF CHANGE MIND-->
-            </div>
                 <!-- <input type="text" class="answer-input" placeholder="Answer">
                 <button type="submit" class="answer-button" value="submit">Submit</button> -->
         </div>
     </div>
-</div>
 
     <!-- FIRST NAV BAR -->
     <ul class="main-nav">
@@ -83,16 +72,26 @@
         <a href="#">
             <li>Play</li>
         </a>
-        <a href="about.php">
+        <a href="#">
             <li>About</li>
         </a>
     </ul>
     <!-- SECOND NAV BAR -->
 
-    <div class="container container-rendered">
-        <div class="row quiz-items" id="stage-container">
-            <!-- STAGES ARE RENDERED HERE USING HANDLEBARS -->
-        </div>
+    <div class="container">
+
+        <p class="accordion">Q1. What currency is the course charged in?</p>
+        <div class="panel">A. The course is charged in Australian dollars.</div>
+
+        <p class="accordion">Q2. What if the course doesn’t help me?</p>
+        <div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+
+        <p class="accordion">Q3. When will the webinars take place?</p>
+        <div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+
+        <p class="accordion">Q4. What is the self-directed mentoring program?</p>
+        <div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>
+
     </div>
 
 
@@ -102,38 +101,10 @@
     <ul class="tab-bar">
         <li><a href="#"><i class="fas fa-gamepad"></i><br>Info</a></li>
         <li><a href="#"><i class="fas fa-play"></i><br>Play</a></li>
-        <li><a href="about.php"><i class="fas fa-question-circle"></i><br>About</a></li>
+        <li><a href="#"><i class="fas fa-question-circle"></i><br>About</a></li>
     </ul>
     <!-- TAB BAR -->
 
-    <!-- HANDLEBARS -->
-    <script id="stage-icon" type="text/x-handlebars-template">
-        {{#each this}}
-            <div class="stage" data-nr="{{@index}}">
-                <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
-                    <div class="order-item bg-dark">
-                        {{#if completed}}
-                         <h1>Completed</h1>
-                        {{/if}}
-                        <img src="img/{{icon}}">
-                    </div>
-                </div>
-            </div>
-        {{/each}}
-    </script>
-
-<script id="keyboard-button-template" type="text/x-handlebars-template">
-        {{#each this}}
-        <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
-        {{/each}}
-        <i class="fas fa-backspace" id="btn-remove" style="background-color:transparent;"></i>
-        <button type="button" class="btn-danger btn-md" id="btn-space">Space</button>
-
-        <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>
-
-    </script>
-
-    <!-- HANDLEBARS -->
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -142,9 +113,6 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
     </script>
     <script>
-        
-        var currentLevel = <?php echo $_GET['level']; ?>;
-        var currentAnswer = "";
 
     </script>
     <script src="js/plugins.js"></script>
@@ -154,13 +122,8 @@
     <script>
         var source = document.getElementById("stage-icon").innerHTML;
         var template = Handlebars.compile(source);
-        for (var i = 0; i < levelData["level" + currentLevel].length; i++) {
-            var stageCompleted = localStorage.getItem("level" + currentLevel + "_stage" + i) == 1;
-            levelData["level" + currentLevel][i].completed = stageCompleted;
-        }
         var html = template(levelData["level" + currentLevel]);
         $("#stage-container").html(html);
-    
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

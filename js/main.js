@@ -58,8 +58,6 @@ $(document).ready(function () {
         var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
                   if (isSolved) {
 
-
-                    
                       $("#answer-input").val(currentAnswer.toUpperCase());
                       $("#answer-input").css('width', '100%');
                       $("#answer-input").prop('disabled', true);

@@ -653,6 +653,13 @@ textarea {
   background-image: linear-gradient(#ffffff 50%, #e2e2e2 50%) !important;
   width:100% !important;
 }
+#btn-remove {
+  cursor:pointer;
+}
+#btn-remove:hover {
+  transform:scale(1.1);
+  transition:0.2s;
+}
 .keyboard-container button {
   color: #333333;
   font-weight: 900 !important;

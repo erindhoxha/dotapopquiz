@@ -55,6 +55,9 @@ $(document).ready(function () {
             $("button:contains('" + lastChar + "')").attr('style', 'visibility: visible')
            str =  str.slice(0, -1);
            $("#answer-input").val(str);
+           $("#btn-remove").css('background-image', 'none');
+           $("#btn-remove").css('background-color', 'none');
+
         });
 
         $("#btn-space").on('click', function() { 

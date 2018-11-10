@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sweetalert2.css">
+    <link rel="stylesheet" href="css/animate.css">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
@@ -35,21 +37,21 @@
             </div>
             <div class="row" style="clear:both;">
                 <div class="col-12">
-                    <!-- <div class="col-xs-6 text-center">
-                        <i class="fab fa-facebook-square" style="background-color:#3d64b1"></i>
-                    </div> -->
-                    <!-- <div class="col-xs-4 text-center">
+                    <div class="col-xs-4 text-center">
+                       <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"> <i class="fab fa-facebook-square" style="background-color:#3d64b1"></i> </a>
+                    </div>
+                    <div class="col-xs-4 text-center">
                         <i class="fas fa-bomb bomb" id="btn-bomb" style="background-color:#3d64b1"></i>
-                    </div> -->
-                    <!-- <div class="col-xs-6 text-center">
+                    </div>
+                    <div class="col-xs-4 text-center">
                         <i class="fas fa-eye reveal" style="background-color:#3d64b1"></i>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <img class="modal-img">
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
-                <button type="button" class="btn  btn-light answer-button" id="button-check">Check</button>
+                <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
                 <i class="fas fa-check-circle check-circle"></i>
             </div>
             <div class="keyboard-container" id="keyboard-container">
@@ -124,7 +126,9 @@
         {{#each this}}
         <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
         {{/each}}
-        <button type="button" class="btn-danger btn-md" id="btn-clear">Clear</button>
+        <button type="button"  style="background-color:transparent; background-image:none;" class="btn-danger btn-md" id="btn-remove"><i class="fas fa-backspace" style="background-color:transparent;"></i> </button>
+        <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>
+
     </script>
 
     <!-- HANDLEBARS -->

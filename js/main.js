@@ -48,6 +48,15 @@ $(document).ready(function () {
             $("#answer-input").val("");
         });
 
+        $("#btn-remove").on('click', function() {
+            var str = $("#answer-input").val();
+            var lastChar = str.substr(str.length - 1);
+            console.log(lastChar);
+            $("button:contains('" + lastChar + "')").attr('style', 'visibility: visible')
+           str =  str.slice(0, -1);
+           $("#answer-input").val(str);
+        });
+
         var stage = levelData["level" + currentLevel][stageNumber];
         window.currentStage = stageNumber;
         
@@ -66,12 +75,12 @@ $(document).ready(function () {
                       $("#answer-input").prop('disabled', true);
                       $("#answer-input").css('border', '2px solid #46A413');
                       $(".fa-check-circle").css('display', 'block');
-
                         var buttons = document.querySelectorAll('.btn-keyboard');
                         for (var i = 0; i < buttons.length; i++) {
                             buttons[i].style.display = "none";
                         }
                       $("#button-check").hide();
+                      $("#btn-remove").hide();
                       $("#btn-clear").hide();
                   } else {
 

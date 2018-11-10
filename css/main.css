@@ -649,7 +649,10 @@ textarea {
   justify-content: center;
   text-align: center;
   clear: both; }
-
+#btn-space {
+  background-image: linear-gradient(#ffffff 50%, #e2e2e2 50%) !important;
+  width:100% !important;
+}
 .keyboard-container button {
   color: #333333;
   font-weight: 900 !important;

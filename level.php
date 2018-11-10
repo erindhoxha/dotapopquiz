@@ -127,6 +127,8 @@
         <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
         {{/each}}
         <button type="button"  style="background-color:transparent; background-image:none;" class="btn-danger btn-md" id="btn-remove"><i class="fas fa-backspace" style="background-color:transparent;"></i> </button>
+        <button type="button" class="btn-danger btn-md" id="btn-space">Space</button>
+
         <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>
 
     </script>

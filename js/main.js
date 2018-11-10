@@ -57,6 +57,13 @@ $(document).ready(function () {
            $("#answer-input").val(str);
         });
 
+        $("#btn-space").on('click', function() { 
+            var space = " ";
+            $("#answer-input").val($("#answer-input").val() + space);
+        });
+
+        $(".btn-keyboard:contains(' ')").attr('style', 'display: none');
+
         var stage = levelData["level" + currentLevel][stageNumber];
         window.currentStage = stageNumber;
         

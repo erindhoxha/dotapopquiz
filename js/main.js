@@ -24,6 +24,10 @@ $(document).ready(function () {
         loadStage(nr);
     });
 
+    $("#button-check").on('click', function() { 
+        $("#button-check").toggleClass('bounceIn');
+    })
+
 
     function loadStage(stageNumber) {
 
@@ -76,10 +80,7 @@ $(document).ready(function () {
         modal.style.display = "block";
 
         var isSolved = localStorage.getItem("level" + currentLevel + "_stage" + currentStage);
-                  if (isSolved) {
-
-
-                        
+                  if (isSolved) {   
                       $("#answer-input").val(currentAnswer.toUpperCase());
                       $("#answer-input").css('width', '100%');
                       $("#answer-input").prop('disabled', true);
@@ -139,10 +140,17 @@ $(document).ready(function () {
             sweetAlert('Correct!', 'Your answer is correct!', 'success');
             $("#myModal").hide(1000);
             //ADD SENE
-        } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
-            input.style.border = "2px solid #EEC93D";
+        // } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
+        //     input.style.border = "2px solid #EEC93D";
         } else {
-            input.style.border = "none";            
+            function highlight(obj){
+                var orig = obj.style.border;
+                obj.style.border = '2px solid #d9534f';
+                setTimeout(function(){
+                     obj.style.border = orig;
+                }, 1000);
+             }   
+             highlight(input);       
         }
         // PER ANSWER
     })

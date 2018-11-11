@@ -68,7 +68,7 @@ $(document).ready(function () {
             var space = " ";
             $("#answer-input").val($("#answer-input").val() + space);
         });
-
+        $("#btn-space").css('width', '100%');
         $(".btn-keyboard:contains(' ')").attr('style', 'display: none');
 
         var stage = levelData["level" + currentLevel][stageNumber];

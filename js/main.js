@@ -130,7 +130,15 @@ $(document).ready(function () {
     });
   
     $("#btn-bomb").on('click', function(){
-
+        sweetAlert('Nice one!', '', 'success');
+        $(".swal2-success-circular-line-left").css('background-color', 'transparent');
+        $(".swal2-success-circular-line-right").css('background-color', 'transparent');
+        $(".swal2-popup").css('background-color', 'black');
+        $(".swal2-success-fix").css('background-color','transparent');
+        $("#swal2-title").css('color', 'white');
+        $("#myModal").hide(1000);
+        $(".swal2-styled").css('background-image', 'linear-gradient(#c92525 50%, #b32222 50%)');
+        $(".swal2-styled").css('border', 'none');
     });
 
 
@@ -146,8 +154,15 @@ $(document).ready(function () {
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             $('.answer-input').val(currentAnswer);
-            sweetAlert('Correct!', 'Your answer is correct!', 'success');
+            sweetAlert('Nice one!', '', 'success');
+            $(".swal2-success-circular-line-left").css('background-color', 'transparent');
+            $(".swal2-success-circular-line-right").css('background-color', 'transparent');
+            $(".swal2-popup").css('background-color', 'black');
+            $(".swal2-success-fix").css('background-color','transparent');
+            $("#swal2-title").css('color', 'white');s
             $("#myModal").hide(1000);
+            $(".swal2-styled").css('background-color', 'transparent !important');
+            $(".swal2-styled").css('background-image', 'linear-gradient(#c92525 50%, #b32222 50%)');
             //ADD SENE
         // } else if (givenAnswer.levenstein(currentAnswer) <= 2) {
         //     input.style.border = "2px solid #EEC93D";
@@ -164,9 +179,6 @@ $(document).ready(function () {
         // PER ANSWER
     })
 });
-
-
-
 
 // MODAL
 // Get the modal
@@ -261,3 +273,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     
     });
+    setTimeout(function(){
+        var focusedElement = jQuery(':focus'); // ideally specify tag, class or ID here before the ':focus' to avoid jQuery scanning all elements on the page.
+    
+        $('#answer-input').appendTo($('form'));
+        $('#answer-input').appendTo($('form'));
+    
+        if (focusedElement && focusedElement.length) { //fixed var name here
+            focusedElement.focus();
+        }
+    }, 3000);

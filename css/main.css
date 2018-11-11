@@ -310,7 +310,13 @@ html > #body-error {
   justify-content: space-around;
   align-items: center;
   z-index: 2; }
-
+  
+  .swal2-popup .swal2-styled.swal2-confirm {
+    background-color: transparent !important;
+  }
+  .swal2-popup .swal2-styled.swal2-confirm {
+    background-image: linear-gradient(#c92525 50%, #b32222 50%);
+  }
 .tab-bar li {
   list-style: none;
   width: 20%;

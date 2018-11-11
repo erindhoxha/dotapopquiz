@@ -111,9 +111,9 @@
         {{#each this}}
             <div class="stage" data-nr="{{@index}}">
                 <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
-                    <div class="order-item bg-dark">
+                    <div class="order-item bg-dark" style="position: relative;">
                         {{#if completed}}
-                         <img src="img/overlay.png" style="position:absolute; height:98%; width:98%;">
+                         <img src="img/overlay.png" style="position:absolute;">
                         {{/if}}
                         <img src="img/{{icon}}">
                     </div>

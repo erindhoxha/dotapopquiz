@@ -56,7 +56,14 @@ $(document).ready(function () {
             var str = $("#answer-input").val();
             var lastChar = str.substr(str.length - 1);
             console.log(lastChar);
-            $("button:contains('" + lastChar + "')").attr('style', 'visibility: visible')
+            for (var i = 0; i < $("button:contains('" + lastChar + "')").length; i++) {
+                if ($("button:contains('" + lastChar + "')")[i].style.visibility == "hidden") {
+                    $("button:contains('" + lastChar + "')")[i].style.visibility = "visible";
+                    break;
+                }
+            }
+
+
            str =  str.slice(0, -1);
            $("#answer-input").val(str);
            $("#btn-remove").css('background-image', 'none');
@@ -94,6 +101,7 @@ $(document).ready(function () {
                       $("#button-check").hide();
                       $("#btn-remove").hide();
                       $("#btn-clear").hide();
+                      $("#btn-space").hide();
                   } else {
 
                       $(".fa-check-circle").css('display', 'none');

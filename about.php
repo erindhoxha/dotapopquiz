@@ -16,11 +16,11 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sweetalert2.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="css/main.css">
     <!-- Default theme -->
 </head>
 
@@ -55,7 +55,7 @@
     <!-- FIRST NAV BAR -->
     <ul class="main-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <li><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
         <li class="logo">
             <h3 class="dota-logo">DotaPopQuiz</h3>
         </li>
@@ -78,19 +78,21 @@
     </ul>
     <!-- SECOND NAV BAR -->
 
-    <div class="container">
+    <div class="container container-panel" style="margin-top:20px;">
 
-        <p class="accordion">Q1. What currency is the course charged in?</p>
-        <div class="panel">A. The course is charged in Australian dollars.</div>
+        <p class="accordion">What is Dota 2?</p>
+        <div class="panel">Dota 2 is a multiplayer online battle arena video game developed and published by Valve Corporation. For more info, visit <a href="http://blog.dota2.com/" target="_blank">Dota 2 website</a></div>
 
-        <p class="accordion">Q2. What if the course doesn’t help me?</p>
-        <div class="panel">A. If it doesn't help you I'll refund the purchase price in full.</div>
+        <p class="accordion">What if I'm stuck?</p>
+        <div class="panel">You can ask a friend, share it on Facebook, post into Dota 2 groups or alternatively, email us at <a href="mailto:support@dotapopquiz.com">support@dotapopquiz.com</a>, and we can help you.</div>
 
-        <p class="accordion">Q3. When will the webinars take place?</p>
-        <div class="panel">A. Depending on the mix of countries and time zones for people attending the webinars, I will pick a time that works best for most participants. All webinars will be recorded so you can listen to them again. The private Facebook group will obviously be available 24/7 and I’ll be monitoring and contributing to the discussion regularly.</div>
+        <p class="accordion">Can I play it on my phone?</p>
+        <div class="panel">Absolutely! You can play it on your Phone, Tablet or Desktop. It's responsive for everyone!</div>
 
-        <p class="accordion">Q4. What is the self-directed mentoring program?</p>
-        <div class="panel">A. The self-directed mentoring program is designed to help you set-up and run an effective mentee-mentor relationship as part of the course.</div>
+        <p class="accordion">How can I donate?</p>
+        <div class="panel">As this is a free game, created with passion by me and used to play dota until I reached 5.5K mmr, decided to quit and pursue a career in Web Development.
+            Every donation is appreciated, which you can donate via PayPal at <a href="#">DotaPopQuiz Paypal Account</a>
+        </div>
 
     </div>
 
@@ -119,12 +121,7 @@
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
     <script src="js/handlebars-v4.0.12.js"></script>
-    <script>
-        var source = document.getElementById("stage-icon").innerHTML;
-        var template = Handlebars.compile(source);
-        var html = template(levelData["level" + currentLevel]);
-        $("#stage-container").html(html);
-    </script>
+
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function () {

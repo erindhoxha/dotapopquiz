@@ -94,6 +94,7 @@ $(document).ready(function () {
                       $("#button-check").hide();
                       $("#btn-remove").hide();
                       $("#btn-clear").hide();
+                      $("#btn-space").hide();
                   } else {
 
                       $(".fa-check-circle").css('display', 'none');
@@ -250,6 +251,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var setClasses = !this.classList.contains('active-acc');
             setClass(acc, 'active-acc', 'remove');
             setClass(panel, 'show', 'remove');
+            $("div.panel").css('background-color', 'transparent');
+            $("div.panel").css('color', 'white');
+
+
     
             if (setClasses) {
                 this.classList.toggle("active-acc");

@@ -113,7 +113,7 @@
                 <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
                     <div class="order-item bg-dark">
                         {{#if completed}}
-                         <h1>Completed</h1>
+                         <img src="img/overlay.png" style="position:absolute; height:98%; width:98%;">
                         {{/if}}
                         <img src="img/{{icon}}">
                     </div>

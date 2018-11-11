@@ -1,6 +1,6 @@
 /* ==========================================================================
     GLOBAL 
-   ========================================================================== */
+   ======================================================================== */
    @import url("https://fonts.googleapis.com/css?family=Comfortaa");
    @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
    $active-color: #c83626;
@@ -885,12 +885,14 @@ p.accordion:after {
 p.accordion.active-acc:after {
     content: "\25BC"; 
 }
-
+.container-panel {
+  background-color:white !important;
+}
 /* Style the element that is used for the panel class */
 
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     transition: 0.4s ease-in-out;

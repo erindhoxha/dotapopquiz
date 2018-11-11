@@ -744,10 +744,10 @@ p.accordion:after {
 p.accordion.active-acc:after {
   content: "\25BC"; }
 
-.container-panel {
-  background-color: white !important; }
-
 /* Style the element that is used for the panel class */
+#btn-space {
+  width: 100% !important; }
+
 div.panel {
   padding: 0 18px;
   background-color: black;

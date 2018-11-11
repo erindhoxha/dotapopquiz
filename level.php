@@ -66,7 +66,7 @@
     <!-- FIRST NAV BAR -->
     <ul class="main-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <li><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
         <li class="logo">
             <h3 class="dota-logo">DotaPopQuiz</h3>
         </li>
@@ -77,10 +77,10 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="#">
+        <a href="info.php">
             <li>Info</li>
         </a>
-        <a href="#">
+        <a href="index.php">
             <li>Play</li>
         </a>
         <a href="about.php">
@@ -100,8 +100,8 @@
 
     <!-- TAB BAR -->
     <ul class="tab-bar">
-        <li><a href="#"><i class="fas fa-gamepad"></i><br>Info</a></li>
-        <li><a href="#"><i class="fas fa-play"></i><br>Play</a></li>
+        <li><a href="info.php"><i class="fas fa-gamepad"></i><br>Info</a></li>
+        <li><a href="index.php"><i class="fas fa-play"></i><br>Play</a></li>
         <li><a href="about.php"><i class="fas fa-question-circle"></i><br>About</a></li>
     </ul>
     <!-- TAB BAR -->

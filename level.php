@@ -35,7 +35,7 @@
             <div class="col-12">
                 <span class="close">&times;</span>
             </div>
-            <div class="row" style="clear:both;">
+            <!-- <div class="row" style="clear:both;">
                 <div class="col-12">
                     <div class="col-xs-4 text-center">
                        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"> <i class="fab fa-facebook-square" style="background-color:#3d64b1"></i> </a>
@@ -47,7 +47,7 @@
                         <i class="fas fa-eye reveal" style="background-color:#3d64b1"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <img class="modal-img">
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>

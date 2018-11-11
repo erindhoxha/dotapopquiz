@@ -1,6 +1,6 @@
 /* ==========================================================================
     GLOBAL 
-   ========================================================================== */
+   ======================================================================== */
    @import url("https://fonts.googleapis.com/css?family=Comfortaa");
    @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
    $active-color: #c83626;
@@ -658,9 +658,9 @@
      }
    }
    
-   
+
    @media screen and (min-width: 1024px) {
-    
+
      .tab-bar {
        display: none;
      }
@@ -885,12 +885,13 @@ p.accordion:after {
 p.accordion.active-acc:after {
     content: "\25BC"; 
 }
-
 /* Style the element that is used for the panel class */
-
+#btn-space {
+  width:100% !important;
+}
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     transition: 0.4s ease-in-out;

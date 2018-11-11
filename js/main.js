@@ -40,6 +40,7 @@ $(document).ready(function () {
         var letters = [...extraLetters, ...answerLetters].map(function (x) {
             return x.toUpperCase();
         });
+        $("#btn-space").css('width', '100%');
 
         shuffle(letters);
 
@@ -75,7 +76,6 @@ $(document).ready(function () {
             var space = " ";
             $("#answer-input").val($("#answer-input").val() + space);
         });
-
         $(".btn-keyboard:contains(' ')").attr('style', 'display: none');
 
         var stage = levelData["level" + currentLevel][stageNumber];
@@ -154,12 +154,14 @@ $(document).ready(function () {
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             $('.answer-input').val(currentAnswer);
+            $( ".stage[data-nr=" + currentStage + "]").children().children().append('<img src="img/overlay.png" style="position:absolute; height:98%; width:98%; z-index:0;margin-left:-113px; margin-top: -226px;">');
             sweetAlert('Nice one!', '', 'success');
+            console.log(this);
             $(".swal2-success-circular-line-left").css('background-color', 'transparent');
             $(".swal2-success-circular-line-right").css('background-color', 'transparent');
             $(".swal2-popup").css('background-color', 'black');
             $(".swal2-success-fix").css('background-color','transparent');
-            $("#swal2-title").css('color', 'white');s
+            $("#swal2-title").css('color', 'white');
             $("#myModal").hide(1000);
             $(".swal2-styled").css('background-color', 'transparent !important');
             $(".swal2-styled").css('background-image', 'linear-gradient(#c92525 50%, #b32222 50%)');
@@ -258,6 +260,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var setClasses = !this.classList.contains('active-acc');
             setClass(acc, 'active-acc', 'remove');
             setClass(panel, 'show', 'remove');
+            $("div.panel").css('background-color', 'transparent');
+            $("div.panel").css('color', 'white');
+
+
     
             if (setClasses) {
                 this.classList.toggle("active-acc");

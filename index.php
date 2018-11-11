@@ -50,10 +50,13 @@
     <ul class="support-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <a href="#">
-            <li>Sound</li>
+            <li>Share</li>
         </a>
         <a href="#">
-            <li>Share</li>
+            <li>Donate</li>
+        </a>
+        <a href="mailto:bug@dotapopquiz.com">
+            <li>Report a bug</li>
         </a>
     </ul>
     <!-- SECOND NAV BAR -->

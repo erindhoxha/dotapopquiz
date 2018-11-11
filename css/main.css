@@ -1,6 +1,6 @@
 /* ==========================================================================
     GLOBAL 
-   ========================================================================== */
+   ======================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 select {
@@ -310,13 +310,7 @@ html > #body-error {
   justify-content: space-around;
   align-items: center;
   z-index: 2; }
-  
-  .swal2-popup .swal2-styled.swal2-confirm {
-    background-color: transparent !important;
-  }
-  .swal2-popup .swal2-styled.swal2-confirm {
-    background-image: linear-gradient(#c92525 50%, #b32222 50%);
-  }
+
 .tab-bar li {
   list-style: none;
   width: 20%;
@@ -655,17 +649,7 @@ textarea {
   justify-content: center;
   text-align: center;
   clear: both; }
-#btn-space {
-  background-image: linear-gradient(#ffffff 50%, #e2e2e2 50%) !important;
-  width:100% !important;
-}
-#btn-remove {
-  cursor:pointer;
-}
-#btn-remove:hover {
-  transform:scale(1.1);
-  transition:0.2s;
-}
+
 .keyboard-container button {
   color: #333333;
   font-weight: 900 !important;
@@ -761,9 +745,12 @@ p.accordion.active-acc:after {
   content: "\25BC"; }
 
 /* Style the element that is used for the panel class */
+#btn-space {
+  width: 100% !important; }
+
 div.panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: black;
   max-height: 0;
   overflow: hidden;
   transition: 0.4s ease-in-out;

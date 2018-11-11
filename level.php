@@ -35,7 +35,7 @@
             <div class="col-12">
                 <span class="close">&times;</span>
             </div>
-            <div class="row" style="clear:both;">
+            <!-- <div class="row" style="clear:both;">
                 <div class="col-12">
                     <div class="col-xs-4 text-center">
                        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"> <i class="fab fa-facebook-square" style="background-color:#3d64b1"></i> </a>
@@ -47,7 +47,7 @@
                         <i class="fas fa-eye reveal" style="background-color:#3d64b1"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <img class="modal-img">
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
@@ -66,7 +66,7 @@
     <!-- FIRST NAV BAR -->
     <ul class="main-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <li><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+        <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
         <li class="logo">
             <h3 class="dota-logo">DotaPopQuiz</h3>
         </li>
@@ -77,10 +77,10 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="#">
+        <a href="info.php">
             <li>Info</li>
         </a>
-        <a href="#">
+        <a href="index.php">
             <li>Play</li>
         </a>
         <a href="about.php">
@@ -100,8 +100,8 @@
 
     <!-- TAB BAR -->
     <ul class="tab-bar">
-        <li><a href="#"><i class="fas fa-gamepad"></i><br>Info</a></li>
-        <li><a href="#"><i class="fas fa-play"></i><br>Play</a></li>
+        <li><a href="info.php"><i class="fas fa-gamepad"></i><br>Info</a></li>
+        <li><a href="index.php"><i class="fas fa-play"></i><br>Play</a></li>
         <li><a href="about.php"><i class="fas fa-question-circle"></i><br>About</a></li>
     </ul>
     <!-- TAB BAR -->
@@ -113,7 +113,7 @@
                 <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
                     <div class="order-item bg-dark">
                         {{#if completed}}
-                         <h1>Completed</h1>
+                         <img src="img/overlay.png" style="position:absolute; height:98%; width:98%;">
                         {{/if}}
                         <img src="img/{{icon}}">
                     </div>

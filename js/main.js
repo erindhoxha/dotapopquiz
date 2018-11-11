@@ -147,12 +147,14 @@ $(document).ready(function () {
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             $('.answer-input').val(currentAnswer);
+            $( ".stage[data-nr=" + currentStage + "]").children().children().append('<img src="img/overlay.png" style="position:absolute; height:98%; width:98%; z-index:0;margin-left:-113px; margin-top: -226px;">');
             sweetAlert('Nice one!', '', 'success');
+            console.log(this);
             $(".swal2-success-circular-line-left").css('background-color', 'transparent');
             $(".swal2-success-circular-line-right").css('background-color', 'transparent');
             $(".swal2-popup").css('background-color', 'black');
             $(".swal2-success-fix").css('background-color','transparent');
-            $("#swal2-title").css('color', 'white');s
+            $("#swal2-title").css('color', 'white');
             $("#myModal").hide(1000);
             $(".swal2-styled").css('background-color', 'transparent !important');
             $(".swal2-styled").css('background-image', 'linear-gradient(#c92525 50%, #b32222 50%)');

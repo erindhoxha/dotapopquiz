@@ -53,9 +53,14 @@ $(document).ready(function () {
             $("#keyboard-container .btn-keyboard").removeClass('clicked');
             $("#answer-input").val("");
 
-        });
+        });    
+        
+
 
         $("#btn-remove").on('click', function() {
+
+
+
             var str = $("#answer-input").val();
             var lastChar = str.substr(str.length - 1);
             console.log(lastChar);
@@ -66,8 +71,6 @@ $(document).ready(function () {
                     break;
                 }
             }
-
-
            str =  str.slice(0, -1);
            $("#answer-input").val(str);
            $("#btn-remove").css('background-image', 'none');
@@ -157,8 +160,10 @@ $(document).ready(function () {
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
+            var audioSuccess = document.getElementById("audio-success");
+            audioSuccess.play();
             $('.answer-input').val(currentAnswer);
-            $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="z-index:2; position:absolute;border-radius:10px; top:0; left:0">');
+            $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="position:absolute;border-radius:10px; top:0; left:0">');
             sweetAlert('Nice one!', '', 'success');
             console.log(this);
             $(".swal2-success-circular-line-left").css('background-color', 'transparent');
@@ -174,10 +179,10 @@ $(document).ready(function () {
         //     input.style.border = "2px solid #EEC93D";
         } else {
             function highlight(obj){
-                var orig = obj.style.border;
-                obj.style.border = '2px solid #d9534f';
+                var orig = obj.style.backgroundColor;
+                obj.style.backgroundColor = '#3c3c3c';
                 setTimeout(function(){
-                     obj.style.border = orig;
+                     obj.style.backgroundColor = orig;
                 }, 1000);
              }   
              highlight(input);       
@@ -293,3 +298,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
             focusedElement.focus();
         }
     }, 3000);
+
+
+    function play(){
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+
+    function check(){
+        var snd = new Audio("img/button-check.wav");
+        snd.play();
+        snd.currentTime=0;
+    }
+
+    $("#mute").on('click', function() {
+        $("#button-check").attr('onclick', '');
+        $(".btn-keyboard").attr('onclick', '');
+        var audio = document.getElementById("audio");
+        audio.mute = true;
+        $("#btn-remove").attr('onclick', '');
+    })
+
+    function remove(){
+        var rmv = new Audio("img/remove.wav");
+        rmv.play();
+        rmv.currentTime=0;
+    }
+
+

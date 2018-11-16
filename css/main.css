@@ -301,7 +301,8 @@ html > #body-error {
   TAB BAR
    ========================================================================== */
 .tab-bar {
-  display: flex;
+  display:none;
+  /* display: flex; */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -667,7 +668,7 @@ text-align:center;}
   border: none;
   margin: 2px;
   height: 35px;
-  width: 15%; }
+  width: 16%; }
 
 .keyboard-container button:hover {
   color: #333; }
@@ -687,17 +688,23 @@ text-align:center;}
 #answer-input {
   border-radius: 30px;
   height: 30px;
-  font-size: 13px;
+  font-size: 15px;
+  color:white;
+  border:2px solid white !important;
+  font-weight:800;
   margin-bottom: 10px;
   border: none;
-  width: 65%;
-  float: left; }
+  width: 70%;
+  float: left; 
+  background-color:transparent;
+
+}
 
 #button-check {
   border-radius: 5px;
-  background-color: grey;
+  background-image: linear-gradient(#13a204 50%, #45a53d 50%);
   color: white;
-  width: 33%;
+  width: 27%;
   float: left;
   margin-top: 10px;
   margin-left: 2%;

@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
     <!-- Default theme -->
 </head>
+<audio id="audio" src="img/button-sound.wav"></audio>
+<audio id="audio-check" src="img/button-check.wav"></audio>
+<audio id="audio-success" src="img/success.wav"></audio>
+<audio id="audio-remove" src="img/remove.wav"></audio>
 
 <body class="body">
     <!-- MODAL -->
@@ -51,7 +55,8 @@
             <img class="modal-img">
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
-                <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
+            <!-- <img src="img/submit_icon.png"> -->
+                <button type="button" class="btn  btn-light answer-button tada fast animated" onclick="check()" id="button-check">Check</button>
                 <i class="fas fa-check-circle check-circle"></i>
             </div>
             <div class="keyboard-container" id="keyboard-container">
@@ -124,9 +129,9 @@
 
 <script id="keyboard-button-template" type="text/x-handlebars-template">
         {{#each this}}
-        <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
+        <button type="button" class="btn-primary btn-keyboard" onclick="play()">{{this}}</button>
         {{/each}}
-        <i class="fas fa-backspace" id="btn-remove" style="background-color:transparent;"></i>
+        <i class="fas fa-backspace" id="btn-remove" onclick="remove()" style="background-color:transparent;"></i>
         <button type="button" class="btn-danger btn-md" id="btn-space">Space</button>
 
         <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>

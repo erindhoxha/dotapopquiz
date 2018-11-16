@@ -69,7 +69,23 @@ var levelData = {
         "image": "terrorblade-01.png",
         "answer": "terrorblade",
         "extraLetters": ""
-    }],
+    },
+    {
+        "icon": "bountyhunter-lq.png",
+        "image": "bountyhunter-01.png",
+        "answer": "bounty hunter"
+    },
+    {
+        "icon": "brewmaster-lq.png",
+        "image": "brewmaster-01.png",
+        "answer": "brewmaster"
+    },
+    {
+        "icon": "alchemist-lq.png",
+        "image": "alchemist-01.png",
+        "answer": "alchemist"
+    }
+],
 
     "level2": [{
         "icon": "underlord-lq.png",

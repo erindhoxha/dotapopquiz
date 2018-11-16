@@ -1,3 +1,6 @@
+// NAV BAR
+
+
 
 $(document).ready(function () {
     $(".fa-bars").click(function () {
@@ -47,24 +50,14 @@ $(document).ready(function () {
 
         $("#btn-clear").on('click', function(){
             $("#keyboard-container .btn-keyboard").css('visibility', 'visible');
-            $("#keyboard-container .btn-keyboard").removeClass('clicked');
             $("#answer-input").val("");
-
         });
 
         $("#btn-remove").on('click', function() {
             var str = $("#answer-input").val();
             var lastChar = str.substr(str.length - 1);
             console.log(lastChar);
-            for (var i = 0; i < $("button:contains('" + lastChar + "')").length; i++) {
-                if ($("button:contains('" + lastChar + "')")[i].style.visibility == "hidden") {
-                    $($("button:contains('" + lastChar + "')")[i]).removeClass('clicked');
-                    $("button:contains('" + lastChar + "')")[i].style.visibility = "visible";
-                    break;
-                }
-            }
-
-
+            $("button:contains('" + lastChar + "')").attr('style', 'visibility: visible')
            str =  str.slice(0, -1);
            $("#answer-input").val(str);
            $("#btn-remove").css('background-image', 'none');
@@ -142,9 +135,8 @@ $(document).ready(function () {
     });
 
 
-    $("#keyboard-container").on('click', '.btn-keyboard:not(.clicked)', function () {
+    $("#keyboard-container").on('click', '.btn-keyboard', function () {
         var letter = $(this).text();
-        $(this).addClass('clicked');
         $(this).css('visibility', 'hidden');
         $("#answer-input").val($("#answer-input").val() + letter);
     });
@@ -155,7 +147,7 @@ $(document).ready(function () {
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             $('.answer-input').val(currentAnswer);
-            $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="z-index:2; position:absolute;border-radius:10px; top:0; left:0">');
+            $( ".stage[data-nr=" + currentStage + "]").children().children().append('<img src="img/overlay.png" style="position:absolute; height:98%; width:98%; z-index:0;margin-left:-113px; margin-top: -226px;">');
             sweetAlert('Nice one!', '', 'success');
             console.log(this);
             $(".swal2-success-circular-line-left").css('background-color', 'transparent');

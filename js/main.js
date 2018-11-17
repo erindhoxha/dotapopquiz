@@ -163,6 +163,7 @@ $(document).ready(function () {
     $(".answer-button").on('click', function () {
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
+             $("body").removeClass('modal-open');
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             var audioSuccess = document.getElementById("audio-success");
             audioSuccess.play();

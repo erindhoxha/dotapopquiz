@@ -552,18 +552,23 @@ textarea {
   color: white; }
 
 @media screen and (min-width: 768px) {
+  .select-btn {
+    font-size:20px !important;
+  }
   .main-nav-phone {
     display: flex;
     flex-direction: row; }
-
+  .accordion {
+    font-size:23px;
+  }
+  .panel {
+    font-size:23px !important;
+  }
   .main-nav-phone a {
     flex: 1; }
 
   .fa-bars {
     display: none; } 
-  body {
-    background-color:blue !important;
-  }
   #button-check {
     height:52px;
   }
@@ -587,15 +592,87 @@ textarea {
   }
   }
 @media screen and (min-width: 1024px) {
+  .main-nav {
+    height: 75px !important;
+    font-size:21px !important;
+  }
+  .fa-arrow-left {
+    font-size:22px !important;
+  }
+  .main-nav-phone li {
+    font-size:22px !important;
+  }
+
   .tab-bar {
     display: none; }
 
   .modal-content {
-    width: 60% !important;
+    width: 80% !important;
     border: none !important; }
-
+  #button-check {
+    height:60px !important;
+    font-size:23px !important;
+  }
+  #answer-input {
+    height:70px !important;
+    font-size:25px !important;
+  }
+  .keyboard-container button {
+    height: 80px !important;;
+    font-size:25px !important;
+  }
   .container-rendered {
     width: 800px; } }
+
+    @media screen and (min-width: 1440px) {
+      .modal-content {
+        width: 40% !important;
+        border: none !important; }
+      .keyboard-container button {
+        height:60px !important;
+        font-size:20px !important;
+      }
+      #answer-input {
+        height:60px !important;
+      }
+      #button-check {
+        height:55px !important;
+      }
+    }
+
+    @media screen and (min-width: 1680px) {
+      .modal-content {
+        width: 25% !important;
+        border: none !important; }
+      .keyboard-container button {
+        height:50px !important;
+        font-size:20px !important;
+      }
+      #answer-input {
+        height:50px !important;
+        font-size:20px !important;
+      }
+      #button-check {
+        height:50px !important;
+        font-size:20px !important;
+      }
+      .modal-content i {
+        font-size:38px !important;
+      }
+      .main-nav {
+        height: 65px !important;
+        font-size:20px !important;
+      }
+      .fa-arrow-left {
+        font-size:20px !important;
+      }
+      .main-nav-phone li {
+        font-size:20px !important;
+      }
+    
+    }
+
+
 @media screen and (max-width: 350px) {
   .order-item h5 {
     display: none; }
@@ -694,8 +771,9 @@ text-align:center;}
   font-weight: 900 !important;
   background-image: linear-gradient(#ffffff 50%, #e2e2e2 50%);
   border: none;
+  font-size:17px;
   margin: 2px;
-  height: 35px;
+  height: 42px;
   width: 16%; }
 
 .keyboard-container button:hover {
@@ -734,6 +812,7 @@ text-align:center;}
   color: white;
   width: 100%;
   float: left;
+  height:40px;
   /* margin-top: 10px; */
   /* margin-left: 2%; */
   margin-bottom: 10px; }

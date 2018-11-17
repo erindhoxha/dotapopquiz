@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>DotaPopQuiz</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
@@ -35,9 +35,9 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="#">
+        <!-- <a href="#">
             <li>Games</li>
-        </a>
+        </a> -->
         <a href="index.php">
             <li>Play</li>
         </a>
@@ -49,9 +49,12 @@
     <!-- SECOND NAV BAR -->
     <ul class="support-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="#">
-            <li>Share</li>
-        </a>
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+        <li>
+            Share on Facebook
+        </li>
+        </a> 
         <a href="#">
             <li>Donate</li>
         </a>
@@ -60,11 +63,17 @@
         </a>
     </ul>
     <!-- SECOND NAV BAR -->
+    <div class="ad-container text-center">
+        <div class="row">
+        <div class="col-lg-12">
+        <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
+        </div>
+        </div>
+    </div>
 
-    <!-- DONBURI ROW -->
     <div class="container">
         <div class="row">
-            <?php for ($i = 1; $i < 5; $i++) { ?>
+            <?php for ($i = 1; $i < 6; $i++) { ?>
             <a href="level.php?level=<?php echo $i?>">
                 <div class="col-lg-6 col-xs-12 col-md-6 order-wrapper order-index" data-nr="0">
                     <div class="order-item bg-dark">

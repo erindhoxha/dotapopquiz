@@ -7,9 +7,15 @@ select {
   text-overflow: ellipsis !important;
   overflow: hidden !important; }
 
+body.modal-open {
+    overflow: hidden;
+}
 ul {
   margin: 0; }
-
+.ad-img {
+  margin:0 auto;
+  margin-top:20px;
+}
 h1,
 h2,
 h3,
@@ -18,7 +24,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0; }
-
+  
+.modal-img {
+  width:65%;
+}
 .hide {
   display: none; }
 
@@ -69,8 +78,9 @@ ul {
 
 .main-nav {
   display: flex;
-  height: 50px;
+  height: 60px;
   align-items: center;
+  font-size:17px;
   margin: 0;
   padding: 10px;
   background-position: 0;
@@ -91,15 +101,16 @@ ul {
   flex-direction: column;
   text-align: center;
   display: none;
-  margin-top: 0; }
+  margin-top: 0; 
+}
 
 .main-nav-phone li {
-  padding: 15px;
+  padding: 20px;
   color: white;
   list-style: none;
   background-image: linear-gradient(#2b2b2b);
   color: #181818;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   background-color: #181818;
   border: #2b2b2b 1px solid;
@@ -173,118 +184,6 @@ ul {
   height: 40px;
   margin-bottom: 20px; }
 
-.eat-in {
-  width: 45%;
-  height: 100%;
-  background-color: #181818;
-  float: left;
-  color: white;
-  text-align: center;
-  font-size: 21px;
-  margin: 2.5%;
-  cursor: pointer;
-  display: flex; }
-
-.takeaway {
-  display: flex;
-  width: 45%;
-  height: 100%;
-  background-color: #fff;
-  float: left;
-  color: black;
-  text-align: center;
-  font-size: 21px;
-  margin: 2.5%;
-  cursor: pointer; }
-
-.eat-in-takeaway-wrapper {
-  margin: 30px auto 0 auto;
-  height: 250px;
-  width: 90%; }
-
-.continue-text {
-  clear: both;
-  color: #ebebeb;
-  text-align: center;
-  font-size: 14px;
-  cursor: pointer;
-  padding-top: 20px;
-  text-decoration: underline; }
-
-/* ================
-    WEBSITE.HTML
-================== */
-.find-your-local-text {
-  color: white;
-  padding: 30px;
-  clear: both; }
-
-.inside-renkon-container {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #131313;
-  text-align: center;
-  color: white; }
-
-.inside-renkon-container img {
-  width: 90%;
-  padding: 5% 0% 5% 0%; }
-
-.inside-renkon-container h3 {
-  width: 80%;
-  margin: 0 auto;
-  line-height: 40px; }
-
-.inside-renkon-container button {
-  background-color: #181818;
-  padding: 15px;
-  border: none;
-  width: 60%;
-  height: 40px;
-  margin-top: 10px; }
-
-.find-your-local-div {
-  width: 90%;
-  margin: 0 auto; }
-
-.find-your-local-div input {
-  height: 50px;
-  width: 68%;
-  float: left; }
-
-.find-your-local-div button {
-  background-color: #181818;
-  height: 50px;
-  width: 30%;
-  margin-left: 2%;
-  border: none;
-  color: white;
-  float: left; }
-
-.eat-in-website {
-  width: 45%;
-  height: 100%;
-  background-color: #181818;
-  float: left;
-  color: white;
-  text-align: center;
-  font-size: 21px;
-  cursor: pointer;
-  padding: 10px 0px 10px 0px;
-  margin: 2.5%; }
-
-.takeaway-website {
-  margin: 2.5%;
-  width: 45%;
-  height: 100%;
-  background-color: #fff;
-  float: left;
-  color: black;
-  text-align: center;
-  font-size: 21px;
-  cursor: pointer;
-  padding: 10px 0px 10px 0px; }
-
 html > #body-error {
   background-color: black !important; }
 
@@ -296,7 +195,8 @@ html > #body-error {
   TAB BAR
    ========================================================================== */
 .tab-bar {
-  display: flex;
+  display:none;
+  /* display: flex; */
   position: fixed;
   left: 0;
   bottom: 0;
@@ -540,28 +440,144 @@ textarea {
   animation-iteration-count: infinite;
   background-color: #181818;
   background-color: #181818;
-  color: white; }
-
+  color: white; 
+}
 @media screen and (min-width: 768px) {
+  .fa-cog {
+    font-size:20px !important;
+  }
+  .select-btn {
+    font-size:20px !important;
+  }
   .main-nav-phone {
     display: flex;
     flex-direction: row; }
-
+  .accordion {
+    font-size:23px;
+  }
+  .panel {
+    font-size:23px !important;
+  }
   .main-nav-phone a {
-    flex: 1; }
-
+    flex: 1; 
+  }
   .fa-bars {
-    display: none; } }
+    display: none; 
+  } 
+  #button-check {
+    height:52px;
+  }
+  #answer-input {
+    height:52px !important;
+    font-size:21px !important;
+  }
+  .keyboard-container button {
+    font-size:21px;
+    width:11% !important;
+    height:55px !important;
+  }
+  #btn-clear {
+    width:100% !important;
+  }
+  .modal-content i {
+    font-size:45px !important;
+  }
+  #button-check {
+    font-size:21px !important;
+  }
+  .support-nav li {
+    font-size:18px !important;
+  }
+}
 @media screen and (min-width: 1024px) {
+  .close {
+    font-size:60px !important;
+  }
+  .main-nav {
+    height: 75px !important;
+    font-size:21px !important;
+  }
+   .support-nav li {
+    font-size:22px !important;
+  }
+  .fa-arrow-left {
+    font-size:22px !important;
+  }
+  .main-nav-phone li {
+    font-size:22px !important;
+  }
   .tab-bar {
-    display: none; }
-
+    display: none; 
+  }
   .modal-content {
-    width: 30% !important;
-    border: none !important; }
-
+    width: 80% !important;
+    border: none !important; 
+  }
+  #button-check {
+    height:60px !important;
+    font-size:23px !important;
+  }
+  #answer-input {
+    height:70px !important;
+    font-size:25px !important;
+  }
+  .keyboard-container button {
+    height: 80px !important;;
+    font-size:25px !important;
+  }
   .container-rendered {
-    width: 800px; } }
+    width: 800px; 
+  } 
+}
+
+    @media screen and (min-width: 1440px) {
+      .modal-content {
+        width: 40% !important;
+        border: none !important; }
+      .keyboard-container button {
+        height:60px !important;
+        font-size:20px !important;
+      }
+      #answer-input {
+        height:60px !important;
+      }
+      #button-check {
+        height:55px !important;
+      }
+    }
+    @media screen and (min-width: 1680px) {
+      .modal-content {
+        width: 25% !important;
+        border: none !important; }
+      .keyboard-container button {
+        height:50px !important;
+        font-size:20px !important;
+      }
+      #answer-input {
+        height:50px !important;
+        font-size:20px !important;
+      }
+      #button-check {
+        height:50px !important;
+        font-size:20px !important;
+      }
+      .modal-content i {
+        font-size:38px !important;
+      }
+      .main-nav {
+        height: 65px !important;
+        font-size:20px !important;
+      }
+      .fa-arrow-left {
+        font-size:20px !important;
+      }
+      .main-nav-phone li {
+        font-size:20px !important;
+      }
+    
+    }
+
+
 @media screen and (max-width: 350px) {
   .order-item h5 {
     display: none; }
@@ -596,7 +612,7 @@ textarea {
   /* 15% from the top and centered */
   padding: 0px 20px 20px 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 92%;
   /* Could be more or less, depending on screen size */ }
 
 /* The Close Button */
@@ -615,10 +631,15 @@ textarea {
   cursor: pointer; }
 
 .modal-content {
-  color: black; }
+  color: black; 
+text-align:center;}
 
 .modal-content img {
-  width: 100%; }
+  width: 65%; 
+  clear:both;
+  display:block;
+  margin:0 auto;
+}
 
 .modal-content i {
   font-size: 20px;
@@ -655,9 +676,10 @@ textarea {
   font-weight: 900 !important;
   background-image: linear-gradient(#ffffff 50%, #e2e2e2 50%);
   border: none;
+  font-size:17px;
   margin: 2px;
-  height: 35px;
-  width: 12%; }
+  height: 42px;
+  width: 16%; }
 
 .keyboard-container button:hover {
   color: #333; }
@@ -675,22 +697,29 @@ textarea {
   display: none; }
 
 #answer-input {
-  border-radius: 30px;
-  height: 30px;
-  font-size: 13px;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 15px;
+  color:white  !important;
+  border:2px solid white !important;
+  font-weight:800;
   margin-bottom: 10px;
   border: none;
-  width: 65%;
-  float: left; }
+  width: 100% !important;
+  float: left; 
+  background-color:transparent;
+
+}
 
 #button-check {
   border-radius: 5px;
-  background-color: grey;
+  background-image: linear-gradient(#13a204 50%, #45a53d 50%);
   color: white;
-  width: 33%;
+  width: 100%;
   float: left;
-  margin-top: 10px;
-  margin-left: 2%;
+  height:40px;
+  /* margin-top: 10px; */
+  /* margin-left: 2%; */
   margin-bottom: 10px; }
 
 .keyboard-container button:active {

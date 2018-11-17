@@ -26,6 +26,7 @@
     <!-- Default theme -->
 </head>
 
+
 <body class="body">
     <!-- MODAL -->
     <!-- The Modal -->
@@ -50,7 +51,8 @@
             </div> -->
             <img class="modal-img">
             <div class="input-check">
-            <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
+            <input type="text" class="answer-input" id="answer-input" placeholder="Answer">
+            <!-- <img src="img/submit_icon.png"> -->
                 <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
                 <i class="fas fa-check-circle check-circle"></i>
             </div>
@@ -77,9 +79,9 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="info.php">
+        <!-- <a href="info.php">
             <li>Info</li>
-        </a>
+        </a> -->
         <a href="index.php">
             <li>Play</li>
         </a>
@@ -88,7 +90,15 @@
         </a>
     </ul>
     <!-- SECOND NAV BAR -->
-
+    <!-- ADVERTISEMENT -->
+    <div class="ad-container text-center">
+        <div class="row">
+        <div class="col-lg-12">
+        <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
+        </div>
+        </div>
+    </div>
+    <!-- ADVERTISEMENT -->
     <div class="container container-rendered">
         <div class="row quiz-items" id="stage-container">
             <!-- STAGES ARE RENDERED HERE USING HANDLEBARS -->
@@ -128,12 +138,11 @@
         {{/each}}
         <i class="fas fa-backspace" id="btn-remove" style="background-color:transparent;"></i>
         <button type="button" class="btn-danger btn-md" id="btn-space">Space</button>
-
         <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>
-
     </script>
 
     <!-- HANDLEBARS -->
+
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

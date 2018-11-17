@@ -1,6 +1,8 @@
 // NAV BAR
 
 $(document).ready(function () {
+
+
     $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");
         $(".support-nav").hide(500);
@@ -16,6 +18,8 @@ $(document).ready(function () {
     });
 
 
+
+
     $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
         // console.log($(this).attr('data-nr'));
@@ -28,7 +32,7 @@ $(document).ready(function () {
 
 
     function loadStage(stageNumber) {
-
+        $("body").addClass("modal-open");
         //RENDERING KEYBOARD
         var source = document.getElementById("keyboard-button-template").innerHTML;
         var template = Handlebars.compile(source);
@@ -46,17 +50,20 @@ $(document).ready(function () {
         $("#keyboard-container").html(html);
         //RENDERING KEYBOARD
 
+
+
         $("#btn-clear").on('click', function(){
             $("#keyboard-container .btn-keyboard").css('visibility', 'visible');
             $("#keyboard-container .btn-keyboard").removeClass('clicked');
             $("#answer-input").val("");
 
-        });
+        });    
+        
+
 
         $("#btn-remove").on('click', function() {
             var str = $("#answer-input").val();
             var lastChar = str.substr(str.length - 1);
-            console.log(lastChar);
             for (var i = 0; i < $("button:contains('" + lastChar + "')").length; i++) {
                 if ($("button:contains('" + lastChar + "')")[i].style.visibility == "hidden") {
                     $($("button:contains('" + lastChar + "')")[i]).removeClass('clicked');
@@ -64,13 +71,10 @@ $(document).ready(function () {
                     break;
                 }
             }
-
-
            str =  str.slice(0, -1);
            $("#answer-input").val(str);
            $("#btn-remove").css('background-image', 'none');
            $("#btn-remove").css('background-color', 'none');
-
         });
 
         $("#btn-space").on('click', function() { 
@@ -152,6 +156,7 @@ $(document).ready(function () {
     $(".answer-button").on('click', function () {
         var givenAnswer = $(".answer-input").val();
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
+             $("body").removeClass('modal-open');
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             $('.answer-input').val(currentAnswer);
             $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="position:absolute;border-radius:10px; top:0; left:0">');
@@ -170,10 +175,10 @@ $(document).ready(function () {
         //     input.style.border = "2px solid #EEC93D";
         } else {
             function highlight(obj){
-                var orig = obj.style.border;
-                obj.style.border = '2px solid #d9534f';
+                var orig = obj.style.backgroundColor;
+                obj.style.backgroundColor = '#3c3c3c';
                 setTimeout(function(){
-                     obj.style.border = orig;
+                     obj.style.backgroundColor = orig;
                 }, 1000);
              }   
              highlight(input);       
@@ -201,6 +206,7 @@ span.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        $("body").removeClass('modal-open');
     }
 }
 
@@ -289,3 +295,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             focusedElement.focus();
         }
     }, 3000);
+
+    $('#answer-input').prop('readonly', true);
+
+    

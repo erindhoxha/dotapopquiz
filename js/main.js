@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }, 3000);
 
-
+    $('#answer-input').prop('readonly', true);
     function play(){
         var audio = document.getElementById("audio");
         audio.play();

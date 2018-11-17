@@ -560,13 +560,38 @@ textarea {
     flex: 1; }
 
   .fa-bars {
-    display: none; } }
+    display: none; } 
+  body {
+    background-color:blue !important;
+  }
+  #button-check {
+    height:52px;
+  }
+  #answer-input {
+    height:52px !important;
+    font-size:21px !important;
+  }
+  .keyboard-container button {
+    font-size:21px;
+    width:11% !important;
+    height:55px !important;
+  }
+  #btn-clear {
+    width:100% !important;
+  }
+  .modal-content i {
+    font-size:45px !important;
+  }
+  #button-check {
+    font-size:21px !important;
+  }
+  }
 @media screen and (min-width: 1024px) {
   .tab-bar {
     display: none; }
 
   .modal-content {
-    width: 30% !important;
+    width: 60% !important;
     border: none !important; }
 
   .container-rendered {

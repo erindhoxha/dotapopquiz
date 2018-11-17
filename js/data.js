@@ -73,17 +73,20 @@ var levelData = {
     {
         "icon": "bountyhunter-lq.png",
         "image": "bountyhunter-01.png",
-        "answer": "bounty hunter"
+        "answer": "bounty hunter",
+        "extraLetters": ""
     },
     {
         "icon": "brewmaster-lq.png",
         "image": "brewmaster-01.png",
-        "answer": "brewmaster"
+        "answer": "brewmaster",
+        "extraLetters": ""
     },
     {
         "icon": "alchemist-lq.png",
         "image": "alchemist-01.png",
-        "answer": "alchemist"
+        "answer": "alchemist",
+        "extraLetters": ""
     }
 ],
 

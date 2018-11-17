@@ -3,6 +3,8 @@
 
 
 $(document).ready(function () {
+
+
     $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");
         $(".support-nav").hide(500);
@@ -18,6 +20,8 @@ $(document).ready(function () {
     });
 
 
+
+
     $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
         // console.log($(this).attr('data-nr'));
@@ -30,7 +34,7 @@ $(document).ready(function () {
 
 
     function loadStage(stageNumber) {
-
+        $("body").addClass("modal-open");
         //RENDERING KEYBOARD
         var source = document.getElementById("keyboard-button-template").innerHTML;
         var template = Handlebars.compile(source);
@@ -210,6 +214,7 @@ span.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        $("body").removeClass('modal-open');
     }
 }
 

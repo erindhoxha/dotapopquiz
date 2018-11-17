@@ -7,6 +7,9 @@ select {
   text-overflow: ellipsis !important;
   overflow: hidden !important; }
 
+body.modal-open {
+    overflow: hidden;
+}
 ul {
   margin: 0; }
 
@@ -602,7 +605,7 @@ textarea {
   /* 15% from the top and centered */
   padding: 0px 20px 20px 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 92%;
   /* Could be more or less, depending on screen size */ }
 
 /* The Close Button */
@@ -686,15 +689,15 @@ text-align:center;}
   display: none; }
 
 #answer-input {
-  border-radius: 30px;
-  height: 30px;
+  border-radius: 5px;
+  height: 40px;
   font-size: 15px;
-  color:white;
+  color:white  !important;
   border:2px solid white !important;
   font-weight:800;
   margin-bottom: 10px;
   border: none;
-  width: 70%;
+  width: 100% !important;
   float: left; 
   background-color:transparent;
 
@@ -704,10 +707,10 @@ text-align:center;}
   border-radius: 5px;
   background-image: linear-gradient(#13a204 50%, #45a53d 50%);
   color: white;
-  width: 27%;
+  width: 100%;
   float: left;
-  margin-top: 10px;
-  margin-left: 2%;
+  /* margin-top: 10px; */
+  /* margin-left: 2%; */
   margin-bottom: 10px; }
 
 .keyboard-container button:active {

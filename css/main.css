@@ -549,9 +549,12 @@ textarea {
   animation-iteration-count: infinite;
   background-color: #181818;
   background-color: #181818;
-  color: white; }
-
+  color: white; 
+}
 @media screen and (min-width: 768px) {
+  .fa-cog {
+    font-size:20px !important;
+  }
   .select-btn {
     font-size:20px !important;
   }
@@ -565,10 +568,11 @@ textarea {
     font-size:23px !important;
   }
   .main-nav-phone a {
-    flex: 1; }
-
+    flex: 1; 
+  }
   .fa-bars {
-    display: none; } 
+    display: none; 
+  } 
   #button-check {
     height:52px;
   }
@@ -590,11 +594,20 @@ textarea {
   #button-check {
     font-size:21px !important;
   }
+  .support-nav li {
+    font-size:18px !important;
   }
+}
 @media screen and (min-width: 1024px) {
+  .close {
+    font-size:60px !important;
+  }
   .main-nav {
     height: 75px !important;
     font-size:21px !important;
+  }
+   .support-nav li {
+    font-size:22px !important;
   }
   .fa-arrow-left {
     font-size:22px !important;
@@ -602,13 +615,13 @@ textarea {
   .main-nav-phone li {
     font-size:22px !important;
   }
-
   .tab-bar {
-    display: none; }
-
+    display: none; 
+  }
   .modal-content {
     width: 80% !important;
-    border: none !important; }
+    border: none !important; 
+  }
   #button-check {
     height:60px !important;
     font-size:23px !important;
@@ -622,7 +635,9 @@ textarea {
     font-size:25px !important;
   }
   .container-rendered {
-    width: 800px; } }
+    width: 800px; 
+  } 
+}
 
     @media screen and (min-width: 1440px) {
       .modal-content {
@@ -643,7 +658,8 @@ textarea {
     @media screen and (min-width: 1680px) {
       .modal-content {
         width: 25% !important;
-        border: none !important; }
+        border: none !important; 
+      }
       .keyboard-container button {
         height:50px !important;
         font-size:20px !important;

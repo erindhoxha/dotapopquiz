@@ -25,10 +25,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
     <!-- Default theme -->
 </head>
-<audio id="audio" src="img/button-sound.wav"></audio>
-<audio id="audio-check" src="img/button-check.wav"></audio>
-<audio id="audio-success" src="img/success.wav"></audio>
-<audio id="audio-remove" src="img/remove.wav"></audio>
+
 
 <body class="body">
     <!-- MODAL -->
@@ -54,9 +51,9 @@
             </div> -->
             <img class="modal-img">
             <div class="input-check">
-            <input type="text" class="answer-input" id="answer-input" placeholder="Answer" disabled>
+            <input type="text" class="answer-input" id="answer-input" placeholder="Answer">
             <!-- <img src="img/submit_icon.png"> -->
-                <button type="button" class="btn  btn-light answer-button tada fast animated" onclick="check()" id="button-check">Check</button>
+                <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
                 <i class="fas fa-check-circle check-circle"></i>
             </div>
             <div class="keyboard-container" id="keyboard-container">
@@ -82,9 +79,9 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="info.php">
+        <!-- <a href="info.php">
             <li>Info</li>
-        </a>
+        </a> -->
         <a href="index.php">
             <li>Play</li>
         </a>
@@ -129,16 +126,15 @@
 
 <script id="keyboard-button-template" type="text/x-handlebars-template">
         {{#each this}}
-        <button type="button" class="btn-primary btn-keyboard" onclick="play()">{{this}}</button>
+        <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
         {{/each}}
-        <i class="fas fa-backspace" id="btn-remove" onclick="remove()" style="background-color:transparent;"></i>
+        <i class="fas fa-backspace" id="btn-remove" style="background-color:transparent;"></i>
         <button type="button" class="btn-danger btn-md" id="btn-space">Space</button>
-
         <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>
-
     </script>
 
     <!-- HANDLEBARS -->
+
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

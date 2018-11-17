@@ -52,6 +52,8 @@ $(document).ready(function () {
         $("#keyboard-container").html(html);
         //RENDERING KEYBOARD
 
+
+
         $("#btn-clear").on('click', function(){
             $("#keyboard-container .btn-keyboard").css('visibility', 'visible');
             $("#keyboard-container .btn-keyboard").removeClass('clicked');
@@ -62,12 +64,8 @@ $(document).ready(function () {
 
 
         $("#btn-remove").on('click', function() {
-
-
-
             var str = $("#answer-input").val();
             var lastChar = str.substr(str.length - 1);
-            console.log(lastChar);
             for (var i = 0; i < $("button:contains('" + lastChar + "')").length; i++) {
                 if ($("button:contains('" + lastChar + "')")[i].style.visibility == "hidden") {
                     $($("button:contains('" + lastChar + "')")[i]).removeClass('clicked');
@@ -79,7 +77,6 @@ $(document).ready(function () {
            $("#answer-input").val(str);
            $("#btn-remove").css('background-image', 'none');
            $("#btn-remove").css('background-color', 'none');
-
         });
 
         $("#btn-space").on('click', function() { 
@@ -165,8 +162,6 @@ $(document).ready(function () {
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
              $("body").removeClass('modal-open');
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
-            var audioSuccess = document.getElementById("audio-success");
-            audioSuccess.play();
             $('.answer-input').val(currentAnswer);
             $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="position:absolute;border-radius:10px; top:0; left:0">');
             sweetAlert('Nice one!', '', 'success');
@@ -306,29 +301,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }, 3000);
 
     $('#answer-input').prop('readonly', true);
-    function play(){
-        var audio = document.getElementById("audio");
-        audio.play();
-    }
 
-    function check(){
-        var snd = new Audio("img/button-check.wav");
-        snd.play();
-        snd.currentTime=0;
-    }
-
-    $("#mute").on('click', function() {
-        $("#button-check").attr('onclick', '');
-        $(".btn-keyboard").attr('onclick', '');
-        var audio = document.getElementById("audio");
-        audio.mute = true;
-        $("#btn-remove").attr('onclick', '');
-    })
-
-    function remove(){
-        var rmv = new Audio("img/remove.wav");
-        rmv.play();
-        rmv.currentTime=0;
-    }
-
-
+    

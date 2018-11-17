@@ -35,9 +35,9 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="#">
+        <!-- <a href="#">
             <li>Games</li>
-        </a>
+        </a> -->
         <a href="index.php">
             <li>Play</li>
         </a>
@@ -64,7 +64,7 @@
     <!-- DONBURI ROW -->
     <div class="container">
         <div class="row">
-            <?php for ($i = 1; $i < 5; $i++) { ?>
+            <?php for ($i = 1; $i < 6; $i++) { ?>
             <a href="level.php?level=<?php echo $i?>">
                 <div class="col-lg-6 col-xs-12 col-md-6 order-wrapper order-index" data-nr="0">
                     <div class="order-item bg-dark">

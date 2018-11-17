@@ -66,9 +66,9 @@
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="info.php">
+        <!-- <a href="info.php">
             <li>Info</li>
-        </a>
+        </a> -->
         <a href="index.php">
             <li>Play</li>
         </a>

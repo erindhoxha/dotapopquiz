@@ -60,8 +60,14 @@
         </a>
     </ul>
     <!-- SECOND NAV BAR -->
-
-    <!-- DONBURI ROW -->
+    <div class="ad-container text-center">
+        <div class="row">
+        <div class="col-lg-12">
+        <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
+        </div>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="row">
             <?php for ($i = 1; $i < 6; $i++) { ?>

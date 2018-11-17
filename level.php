@@ -90,7 +90,15 @@
         </a>
     </ul>
     <!-- SECOND NAV BAR -->
-
+    <!-- ADVERTISEMENT -->
+    <div class="ad-container text-center">
+        <div class="row">
+        <div class="col-lg-12">
+        <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
+        </div>
+        </div>
+    </div>
+    <!-- ADVERTISEMENT -->
     <div class="container container-rendered">
         <div class="row quiz-items" id="stage-container">
             <!-- STAGES ARE RENDERED HERE USING HANDLEBARS -->

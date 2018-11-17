@@ -12,7 +12,10 @@ body.modal-open {
 }
 ul {
   margin: 0; }
-
+.ad-img {
+  margin:0 auto;
+  margin-top:20px;
+}
 h1,
 h2,
 h3,
@@ -180,118 +183,6 @@ ul {
   width: 80%;
   height: 40px;
   margin-bottom: 20px; }
-
-.eat-in {
-  width: 45%;
-  height: 100%;
-  background-color: #181818;
-  float: left;
-  color: white;
-  text-align: center;
-  font-size: 21px;
-  margin: 2.5%;
-  cursor: pointer;
-  display: flex; }
-
-.takeaway {
-  display: flex;
-  width: 45%;
-  height: 100%;
-  background-color: #fff;
-  float: left;
-  color: black;
-  text-align: center;
-  font-size: 21px;
-  margin: 2.5%;
-  cursor: pointer; }
-
-.eat-in-takeaway-wrapper {
-  margin: 30px auto 0 auto;
-  height: 250px;
-  width: 90%; }
-
-.continue-text {
-  clear: both;
-  color: #ebebeb;
-  text-align: center;
-  font-size: 14px;
-  cursor: pointer;
-  padding-top: 20px;
-  text-decoration: underline; }
-
-/* ================
-    WEBSITE.HTML
-================== */
-.find-your-local-text {
-  color: white;
-  padding: 30px;
-  clear: both; }
-
-.inside-renkon-container {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #131313;
-  text-align: center;
-  color: white; }
-
-.inside-renkon-container img {
-  width: 90%;
-  padding: 5% 0% 5% 0%; }
-
-.inside-renkon-container h3 {
-  width: 80%;
-  margin: 0 auto;
-  line-height: 40px; }
-
-.inside-renkon-container button {
-  background-color: #181818;
-  padding: 15px;
-  border: none;
-  width: 60%;
-  height: 40px;
-  margin-top: 10px; }
-
-.find-your-local-div {
-  width: 90%;
-  margin: 0 auto; }
-
-.find-your-local-div input {
-  height: 50px;
-  width: 68%;
-  float: left; }
-
-.find-your-local-div button {
-  background-color: #181818;
-  height: 50px;
-  width: 30%;
-  margin-left: 2%;
-  border: none;
-  color: white;
-  float: left; }
-
-.eat-in-website {
-  width: 45%;
-  height: 100%;
-  background-color: #181818;
-  float: left;
-  color: white;
-  text-align: center;
-  font-size: 21px;
-  cursor: pointer;
-  padding: 10px 0px 10px 0px;
-  margin: 2.5%; }
-
-.takeaway-website {
-  margin: 2.5%;
-  width: 45%;
-  height: 100%;
-  background-color: #fff;
-  float: left;
-  color: black;
-  text-align: center;
-  font-size: 21px;
-  cursor: pointer;
-  padding: 10px 0px 10px 0px; }
 
 html > #body-error {
   background-color: black !important; }
@@ -654,12 +545,10 @@ textarea {
         height:55px !important;
       }
     }
-
     @media screen and (min-width: 1680px) {
       .modal-content {
         width: 25% !important;
-        border: none !important; 
-      }
+        border: none !important; }
       .keyboard-container button {
         height:50px !important;
         font-size:20px !important;

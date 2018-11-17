@@ -49,9 +49,12 @@
     <!-- SECOND NAV BAR -->
     <ul class="support-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
-        <a href="#">
-            <li>Share</li>
-        </a>
+
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+        <li>
+            Share on Facebook
+        </li>
+        </a> 
         <a href="#">
             <li>Donate</li>
         </a>
@@ -67,7 +70,7 @@
         </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <?php for ($i = 1; $i < 6; $i++) { ?>

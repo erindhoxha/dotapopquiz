@@ -143,7 +143,7 @@
     </script>
     <script>
         
-        var currentLevel = <?php echo $_GET['level']; ?>;
+        var currentLevel = <?php echo intval($_GET['level']); ?>;
         var currentAnswer = "";
 
     </script>

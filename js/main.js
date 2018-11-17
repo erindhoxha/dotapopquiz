@@ -1,7 +1,5 @@
 // NAV BAR
 
-
-
 $(document).ready(function () {
     $(".fa-bars").click(function () {
         $(".main-nav-phone").toggle("slide");
@@ -106,13 +104,11 @@ $(document).ready(function () {
                       $("#btn-clear").hide();
                       $("#btn-space").hide();
                   } else {
-
                       $(".fa-check-circle").css('display', 'none');
                       $("#answer-input").val("");
                       $("#answer-input").css('border', 'none');
                       $("#button-check").show();
                       $("#answer-input").css('width', '65%');
-
                   }
 }    
 
@@ -158,7 +154,7 @@ $(document).ready(function () {
         if (givenAnswer.toUpperCase() == currentAnswer.toUpperCase()) {
             localStorage.setItem("level" + currentLevel + "_stage" + currentStage, 1);
             $('.answer-input').val(currentAnswer);
-            $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="z-index:2; position:absolute;border-radius:10px; top:0; left:0">');
+            $(".stage[data-nr=" + currentStage + "]").find(".order-item").append('<img src="img/overlay.png" style="position:absolute;border-radius:10px; top:0; left:0">');
             sweetAlert('Nice one!', '', 'success');
             console.log(this);
             $(".swal2-success-circular-line-left").css('background-color', 'transparent');

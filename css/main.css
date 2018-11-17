@@ -702,7 +702,7 @@ textarea {
 
 .btn-keyboard:hover {
   transition: 100ms;
-  transform: scale(1.1); }
+  transform: scale(0.9); }
 
 .keyboard-container button:focus {
   color: black; }

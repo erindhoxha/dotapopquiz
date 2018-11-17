@@ -78,9 +78,9 @@ ul {
 
 .main-nav {
   display: flex;
-  height: 60px;
+  height: 50px;
   align-items: center;
-  font-size:17px;
+  font-size:15px;
   margin: 0;
   padding: 10px;
   background-position: 0;
@@ -110,7 +110,7 @@ ul {
   list-style: none;
   background-image: linear-gradient(#2b2b2b);
   color: #181818;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   background-color: #181818;
   border: #2b2b2b 1px solid;
@@ -447,16 +447,16 @@ textarea {
     font-size:20px !important;
   }
   .select-btn {
-    font-size:20px !important;
+    font-size:16px !important;
   }
   .main-nav-phone {
     display: flex;
     flex-direction: row; }
   .accordion {
-    font-size:23px;
+    font-size:14px;
   }
   .panel {
-    font-size:23px !important;
+    font-size:14px !important;
   }
   .main-nav-phone a {
     flex: 1; 
@@ -490,47 +490,56 @@ textarea {
   }
 }
 @media screen and (min-width: 1024px) {
+  .container-index {
+        width: 800px !important;
+  }
   .close {
-    font-size:60px !important;
+    font-size:30px !important;
   }
   .main-nav {
-    height: 75px !important;
-    font-size:21px !important;
-  }
-   .support-nav li {
-    font-size:22px !important;
-  }
-  .fa-arrow-left {
-    font-size:22px !important;
+    height: 40px !important;
+    font-size:14px !important;
   }
   .main-nav-phone li {
-    font-size:22px !important;
+    padding:10px !important;
+  }
+   .support-nav li {
+    font-size:13px !important;
+  }
+  .fa-arrow-left {
+    font-size:17px !important;
+  }
+  .main-nav-phone li {
+    font-size:13px !important;
   }
   .tab-bar {
     display: none; 
   }
   .modal-content {
-    width: 80% !important;
+    width: 30% !important;
     border: none !important; 
   }
   #button-check {
-    height:60px !important;
-    font-size:23px !important;
+    height:40px !important;
+    font-size:17px !important;
   }
   #answer-input {
-    height:70px !important;
-    font-size:25px !important;
+    height:40px !important;
+    font-size:17px !important;
   }
   .keyboard-container button {
-    height: 80px !important;;
-    font-size:25px !important;
+    height: 40px !important;;
+    font-size:15px !important;
   }
   .container-rendered {
-    width: 800px; 
+    width: 550px; 
   } 
+  #btn-remove {
+    font-size:20px !important;
+  }
 }
 
-    @media screen and (min-width: 1440px) {
+    /* @media screen and (min-width: 1440px) {
       .modal-content {
         width: 40% !important;
         border: none !important; }
@@ -544,8 +553,8 @@ textarea {
       #button-check {
         height:55px !important;
       }
-    }
-    @media screen and (min-width: 1680px) {
+    } */
+    /* @media screen and (min-width: 1680px) {
       .modal-content {
         width: 25% !important;
         border: none !important; }
@@ -575,7 +584,7 @@ textarea {
         font-size:20px !important;
       }
     
-    }
+    } */
 
 
 @media screen and (max-width: 350px) {
@@ -678,8 +687,8 @@ text-align:center;}
   border: none;
   font-size:17px;
   margin: 2px;
-  height: 42px;
-  width: 16%; }
+  height: 36px;
+  width: 15%; }
 
 .keyboard-container button:hover {
   color: #333; }

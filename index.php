@@ -71,7 +71,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container container-index">
         <div class="row">
             <?php for ($i = 1; $i < 6; $i++) { ?>
             <a href="level.php?level=<?php echo $i?>">

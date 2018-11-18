@@ -48,8 +48,9 @@ main {
   border-radius: 5px; }
 
 body {
-  background-color: #181818;
-  background-position: center no-repeat;
+  background-image:url('../img/bg_tile.jpg');
+  /* background-color: #181818; */
+  background-position: center repeat;
   background-size: cover no-repeat;
   font-family: "Comfortaa", Helvetica;
   padding-bottom: 30px;
@@ -516,7 +517,7 @@ textarea {
     display: none; 
   }
   .modal-content {
-    width: 30% !important;
+    width: 25% !important;
     border: none !important; 
   }
   #button-check {
@@ -644,7 +645,9 @@ textarea {
 text-align:center;}
 
 .modal-content img {
-  width: 65%; 
+  min-height: 200px;
+  min-width:200px;
+  width: 50%; 
   clear:both;
   display:block;
   margin:0 auto;
@@ -738,16 +741,13 @@ text-align:center;}
   background-color: #333;
   border-color: #333; }
 
-.btn-keyboard:hover {
-  transition: 100ms;
-  transform: scale(0.9); }
 
 .keyboard-container button:focus {
   color: black; }
 
-.keyboard-container button:active:hover {
+/* .keyboard-container button:active:hover {
   color: black;
-  background-color: white; }
+  background-color: white; } */
 
 .reveal,
 .bomb {

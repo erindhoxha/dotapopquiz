@@ -11,8 +11,8 @@
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="bootstrapcss/bootstrap.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS --><!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -104,7 +104,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/data.js"></script>
     <script src="bootstrapjs/bootstrap.js"></script>
-    <script src="js/handlebars-v4.0.12.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>            
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

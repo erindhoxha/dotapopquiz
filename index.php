@@ -6,16 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>DotaPopQuiz</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
-
-    <!-- Latest compiled and minified CSS --><!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,12 +24,14 @@
     <ul class="main-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <li><a href="#"><i class="fas fa-cog"></i></a></li>
-        <li class="logo">
-            <h3 class="dota-logo">DotaQuiz</h3>
+        <li class="logo" style="margin-top:7px">
+        <h4 style="font-weight:700; color:white;" class="logo">DOTA<span class="active-text">POP</span>QUIZ</h4>
+           <!-- <img class="img-responsive" src="img/logo.png"> -->
         </li>
         <li><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
     <!-- FIRST NAV BAR -->
+
 
     <!-- SECOND NAV BAR -->
     <ul class="main-nav-phone">
@@ -45,7 +46,6 @@
             <li>About</li>
         </a>
     </ul>
-    <!-- SECOND NAV BAR -->
     <!-- SECOND NAV BAR -->
     <ul class="support-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
@@ -62,23 +62,24 @@
             <li>Report a bug</li>
         </a>
     </ul>
+
     <!-- SECOND NAV BAR -->
-    <div class="ad-container text-center">
+    <!-- <div class="ad-container text-center">
         <div class="row">
         <div class="col-lg-12">
         <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
         </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container container-index">
         <div class="row">
             <?php for ($i = 1; $i < 6; $i++) { ?>
             <a href="level.php?level=<?php echo $i?>">
-                <div class="col-lg-6 col-xs-12 col-md-6 order-wrapper order-index" data-nr="0">
-                    <div class="order-item bg-dark">
-                        <img src="img/level<?php echo $i?>.png">
-                        <button type="button" class="select-btn hvr-back-pulse levelOneButton">Play</button>
+                <div class="col-lg-6 col-md-6 col-xs-12 order-wrapper order-index" data-nr="0">
+                    <div class="order-item">
+                        <img src="img/level<?php echo $i?>.jpg">
+                        <button type="button" class="select-btn levelOneButton">Play</button>
                     </div>
                 </div>
             </a>
@@ -96,15 +97,11 @@
     <!-- TAB BAR -->
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-    </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/data.js"></script>
-    <script src="bootstrapjs/bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>            
+    <script src="js/plugins.min.js"></script>
+    <script src="js/data.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrapjs/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -118,8 +115,6 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>

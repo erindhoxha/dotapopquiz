@@ -17,9 +17,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-
     $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
         // console.log($(this).attr('data-nr'));
@@ -28,7 +25,7 @@ $(document).ready(function () {
 
     $("#button-check").on('click', function() { 
         $("#button-check").toggleClass('bounceIn');
-    })
+    });
 
 
     function loadStage(stageNumber) {
@@ -39,7 +36,7 @@ $(document).ready(function () {
 
         var extraLetters = levelData["level" + currentLevel][stageNumber].extraLetters.split('');
         var answerLetters = levelData["level" + currentLevel][stageNumber].answer.split('');
-        var letters = [...extraLetters, ...answerLetters].map(function (x) {
+        var letters = extraLetters.concat(answerLetters).map(function (x) {
             return x.toUpperCase();
         });
         $("#btn-space").css('width', '100%');
@@ -96,7 +93,7 @@ $(document).ready(function () {
                   if (isSolved) {
                       $("#answer-input").val(currentAnswer.toUpperCase());
                       $("#answer-input").css('width', '100%');
-                      $("#answer-input").prop('disabled', true);
+                    //   $("#answer-input").prop('disabled', true);
                       $("#answer-input").css('border', '2px solid #46A413');
                       $(".fa-check-circle").css('display', 'block');
                         var buttons = document.querySelectorAll('.btn-keyboard');

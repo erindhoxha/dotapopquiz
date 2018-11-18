@@ -584,6 +584,9 @@ textarea {
   .modal-content {
     width:500px !important;;
   }
+  #btn-remove {
+    font-size:28px !important;
+  }
 }
 @media screen and (min-width: 992px) {
   .container-rendered {

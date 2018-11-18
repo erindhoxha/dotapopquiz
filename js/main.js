@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $("#button-check").on('click', function() { 
         $("#button-check").toggleClass('bounceIn');
-    })
+    });
 
 
     function loadStage(stageNumber) {

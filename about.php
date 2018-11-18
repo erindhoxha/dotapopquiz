@@ -2,25 +2,23 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>DotaPopQuiz</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
-
     <!-- Latest compiled and minified CSS -->
-    <link href="bootstrapcss/bootstrap.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/sweetalert2.css">
-
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
-    <link rel="stylesheet" href="css/main.css">
     <!-- Default theme -->
 </head>
 
@@ -112,15 +110,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-    </script>
-    <script>
 
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/handlebars-v4.0.12.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
@@ -133,14 +126,9 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
     <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
-    <script src="bootstrapjs/bootstrap.js"></script>
-    <script src="js/sweetalert2.js"></script>
+    <script src="bootstrapjs/bootstrap.min.js"></script>
 
 </body>
 

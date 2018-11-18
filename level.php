@@ -6,22 +6,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>DotaPopQuiz</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
-
     <!-- Latest compiled and minified CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.0/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-
     <!-- CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css" />
     <!-- Default theme -->
@@ -52,7 +49,7 @@
             </div> -->
             <img class="modal-img">
             <div class="input-check">
-            <input type="text" class="answer-input" id="answer-input" placeholder="Answer">
+            <input type="text" class="answer-input" id="answer-input" placeholder="">
             <!-- <img src="img/submit_icon.png"> -->
                 <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
                 <i class="fas fa-check-circle check-circle"></i>
@@ -70,8 +67,8 @@
     <ul class="main-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
-        <li class="logo">
-            <h3 class="dota-logo">DotaPopQuiz</h3>
+        <li class="logo" style="margin-top:7px">
+           <img class="img-responsive" src="img/logo2.png">
         </li>
         <li><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
@@ -92,13 +89,13 @@
     </ul>
     <!-- SECOND NAV BAR -->
     <!-- ADVERTISEMENT -->
-    <div class="ad-container text-center">
+    <!-- <div class="ad-container text-center">
         <div class="row">
         <div class="col-lg-12">
         <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
         </div>
         </div>
-    </div>
+    </div> -->
     <!-- ADVERTISEMENT -->
     <div class="container container-rendered">
         <div class="row quiz-items" id="stage-container">
@@ -122,7 +119,7 @@
         {{#each this}}
             <div class="stage" data-nr="{{@index}}">
                 <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
-                    <div class="order-item bg-dark" style="position: relative;">
+                    <div class="order-item" style="position: relative;">
                         {{#if completed}}
                          <img src="img/overlay.png" style="position:absolute;">
                         {{/if}}
@@ -157,9 +154,9 @@
         var currentAnswer = "";
 
     </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/data.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/data.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script>
         var source = document.getElementById("stage-icon").innerHTML;
@@ -183,15 +180,11 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
     <!-- JavaScript -->
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
     <script src="bootstrapjs/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.0/sweetalert2.all.min.js"></script>
-
 </body>
 
 </html>

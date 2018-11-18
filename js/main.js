@@ -17,9 +17,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-
     $(".stage").on('click', function () {
         var nr = $(this).attr('data-nr');
         // console.log($(this).attr('data-nr'));

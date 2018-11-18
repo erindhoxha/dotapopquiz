@@ -1,90 +1,90 @@
 var levelData = {
     "level1": [{
-        "icon": "luna-lq.png",
-        "image": "luna-01.png",
+        "icon": "luna-lq.jpg",
+        "image": "luna-01.jpg",
         "answer": "luna",
         "extraLetters": "undesrlo"
     }, {
-        "icon": "viper-lq.png",
-        "image": "viper-01.png",
+        "icon": "viper-lq.jpg",
+        "image": "viper-01.jpg",
         "answer": "viper",
         "extraLetters": "riposal"
     },
     {
-        "icon": "legion commander-lq.png",
-        "image": "legion commander-01.png",
+        "icon": "legion commander-lq.jpg",
+        "image": "legion commander-01.jpg",
         "answer": "legion commander",
         "extraLetters": ""
     },
     {
-        "icon": "abaddon-lq.png",
-        "image": "abaddon-01.png",
+        "icon": "abaddon-lq.jpg",
+        "image": "abaddon-01.jpg",
         "answer": "abaddon",
         "extraLetters": "asf"
     },
     {
-        "icon": "nagasiren-lq.png",
-        "image": "nagasiren-01.png",
+        "icon": "nagasiren-lq.jpg",
+        "image": "nagasiren-01.jpg",
         "answer": "naga siren",
         "extraLetters": "zie"
     },
     {
-        "icon": "kunkka-lq.png",
-        "image": "kunkka-01.png",
+        "icon": "kunkka-lq.jpg",
+        "image": "kunkka-01.jpg",
         "answer": "kunkka",
         "extraLetters": "azelow"
     },
     {
-        "icon": "beastmaster-lq.png",
-        "image": "beastmaster-01.png",
+        "icon": "beastmaster-lq.jpg",
+        "image": "beastmaster-01.jpg",
         "answer": "beastmaster",
         "extraLetters": "e"
     },
     {
-        "icon": "trollwarlord-lq.png",
-        "image": "trollwarlord-01.png",
+        "icon": "trollwarlord-lq.jpg",
+        "image": "trollwarlord-01.jpg",
         "answer": "troll warlord",
         "extraLetters": ""
     },
     {
-        "icon": "eldertitan-lq.png",
-        "image": "eldertitan-01.png",
+        "icon": "eldertitan-lq.jpg",
+        "image": "eldertitan-01.jpg",
         "answer": "elder titan",
         "extraLetters": "pe"
     },
     {
-        "icon": "spiritbreaker-lq.png",
-        "image": "spiritbreaker-01.png",
+        "icon": "spiritbreaker-lq.jpg",
+        "image": "spiritbreaker-01.jpg",
         "answer": "spiritbreaker",
         "extraLetters": ""
     },
     {
-        "icon": "doom-lq.png",
-        "image": "doom-01.png",
+        "icon": "doom-lq.jpg",
+        "image": "doom-01.jpg",
         "answer": "doom",
         "extraLetters": "zrjgnisq"
     },
     {
-        "icon": "timbersaw-lq.png",
-        "image": "timbersaw-01.png",
+        "icon": "timbersaw-lq.jpg",
+        "image": "timbersaw-01.jpg",
         "answer": "timbersaw",
         "extraLetters": "rtb"
     },
     {
-        "icon": "nyx-lq.png",
-        "image": "nyx-01.png",
+        "icon": "nyx-lq.jpg",
+        "image": "nyx-01.jpg",
         "answer": "nyx assassin",
         "extraLetters": "x"
     },
     {
-        "icon": "phantomlancer-lq.png",
-        "image": "phantomlancer-01.png",
+        "icon": "phantomlancer-lq.jpg",
+        "image": "phantomlancer-01.jpg",
         "answer": "phantom lancer",
         "extraLetters": ""
     },
     {
-        "icon": "medusa-lq.png",
-        "image": "medusa-01.png",
+        "icon": "medusa-lq.jpg",
+        "image": "medusa-01.jpg",
         "answer": "medusa",
         "extraLetters": "trdess"
     }
@@ -93,91 +93,91 @@ var levelData = {
 // ------------------------------------------------ LEVEL 2 ------------------------------------------------------------------------
 
     "level2": [{
-        "icon": "omniknight-lq.png",
-        "image": "omniknight-01.png",
+        "icon": "omniknight-lq.jpg",
+        "image": "omniknight-01.jpg",
         "answer": "omniknight",
         "extraLetters": "zf"
     }, {
-        "icon": "bloodseeker-lq.png",
-        "image": "bloodseeker-01.png",
+        "icon": "bloodseeker-lq.jpg",
+        "image": "bloodseeker-01.jpg",
         "answer": "bloodseeker",
         "extraLetters": "o",
     },
     {
-        "icon": "templarassassin-lq.png",
-        "image": "templarassassin-01.png",
+        "icon": "templarassassin-lq.jpg",
+        "image": "templarassassin-01.jpg",
         "answer": "templar assassin",
         "extraLetters": ""
     },
     {
-        "icon": "drowranger-lq.png",
-        "image": "drowranger-01.png",
+        "icon": "drowranger-lq.jpg",
+        "image": "drowranger-01.jpg",
         "answer": "drow ranger",
         "extraLetters": "ta"
     },
     {
-        "icon": "vengefulspirit-lq.png",
-        "image": "vengefulspirit-01.png",
+        "icon": "vengefulspirit-lq.jpg",
+        "image": "vengefulspirit-01.jpg",
         "answer": "vengeful spirit",
         "extraLetters": ""
     },
     {
-        "icon": "nightstalker-lq.png",
-        "image": "nightstalker-01.png",
+        "icon": "nightstalker-lq.jpg",
+        "image": "nightstalker-01.jpg",
         "answer": "nightstalker",
         "extraLetters": ""
     },
     {
-        "icon": "venomancer-lq.png",
-        "image": "venomancer-01.png",
+        "icon": "venomancer-lq.jpg",
+        "image": "venomancer-01.jpg",
         "answer": "venomancer",
         "extraLetters": "uyi"
     },
     {
-        "icon": "alchemist-lq.png",
-        "image": "alchemist-01.png",
+        "icon": "alchemist-lq.jpg",
+        "image": "alchemist-01.jpg",
         "answer": "alchemist",
         "extraLetters": "rto"
     },
     {
-        "icon": "tusk-lq.png",
-        "image": "tusk-01.png",
+        "icon": "tusk-lq.jpg",
+        "image": "tusk-01.jpg",
         "answer": "tusk",
         "extraLetters": "aiyurnbm"
     },
     {
-        "icon": "sniper-lq.png",
-        "image": "sniper-01.png",
+        "icon": "sniper-lq.jpg",
+        "image": "sniper-01.jpg",
         "answer": "sniper",
         "extraLetters": "aiyubm"
     },
     {
-        "icon": "slardar-lq.png",
-        "image": "slardar-01.png",
+        "icon": "slardar-lq.jpg",
+        "image": "slardar-01.jpg",
         "answer": "slardar",
         "extraLetters": "tszur"
     },
     {
-        "icon": "meepo-lq.png",
-        "image": "meepo-01.png",
+        "icon": "meepo-lq.jpg",
+        "image": "meepo-01.jpg",
         "answer": "meepo",
         "extraLetters": "yuysshm"
     },
     {
-        "icon": "razor-lq.png",
-        "image": "razor-01.png",
+        "icon": "razor-lq.jpg",
+        "image": "razor-01.jpg",
         "answer": "razor",
         "extraLetters": "agkmlam"
     },
     {
-        "icon": "earthshaker-lq.png",
-        "image": "earthshaker-01.png",
+        "icon": "earthshaker-lq.jpg",
+        "image": "earthshaker-01.jpg",
         "answer": "earthshaker",
         "extraLetters": "a"
     },
     {
-        "icon": "lycan-lq.png",
-        "image": "lycan-01.png",
+        "icon": "lycan-lq.jpg",
+        "image": "lycan-01.jpg",
         "answer": "lycan",
         "extraLetters": "thbmflw"
     }],
@@ -185,182 +185,182 @@ var levelData = {
     // ------------------------------------------------ LEVEL 3 ------------------------------------------------------------------------
     
         "level3": [{
-            "icon": "mirana-lq.png",
-            "image": "mirana-01.png",
+            "icon": "mirana-lq.jpg",
+            "image": "mirana-01.jpg",
             "answer": "mirana",
             "extraLetters": "jwuato"
         }, {
-            "icon": "axe-lq.png",
-            "image": "axe-01.png",
+            "icon": "axe-lq.jpg",
+            "image": "axe-01.jpg",
             "answer": "axe",
             "extraLetters": "uifjaases",
         },
         {
-            "icon": "treantprotector-lq.png",
-            "image": "treantprotector-01.png",
+            "icon": "treantprotector-lq.jpg",
+            "image": "treantprotector-01.jpg",
             "answer": "treant protector",
             "extraLetters": ""
         },
         {
-            "icon": "clockwerk-lq.png",
-            "image": "clockwerk-01.png",
+            "icon": "clockwerk-lq.jpg",
+            "image": "clockwerk-01.jpg",
             "answer": "clockwerk",
             "extraLetters": "ta"
         },
         {
-            "icon": "dragonknight-lq.png",
-            "image": "dragonknight-01.png",
+            "icon": "dragonknight-lq.jpg",
+            "image": "dragonknight-01.jpg",
             "answer": "dragon knight",
             "extraLetters": ""
         },
         {
-            "icon": "void-lq.png",
-            "image": "void-01.png",
+            "icon": "void-lq.jpg",
+            "image": "void-01.jpg",
             "answer": "void",
             "extraLetters": ""
         },
         {
-            "icon": "huskar-lq.png",
-            "image": "huskar-01.png",
+            "icon": "huskar-lq.jpg",
+            "image": "huskar-01.jpg",
             "answer": "huskar",
             "extraLetters": "uyiaen"
         },
         {
-            "icon": "gyrocopter-lq.png",
-            "image": "gyrocopter-01.png",
+            "icon": "gyrocopter-lq.jpg",
+            "image": "gyrocopter-01.jpg",
             "answer": "gyrocopter",
             "extraLetters": "as"
         },
         {
-            "icon": "centaur-lq.png",
-            "image": "centaur-01.png",
+            "icon": "centaur-lq.jpg",
+            "image": "centaur-01.jpg",
             "answer": "centaur",
             "extraLetters": "autns"
         },
         {
-            "icon": "shadowfiend-lq.png",
-            "image": "shadowfiend-01.png",
+            "icon": "shadowfiend-lq.jpg",
+            "image": "shadowfiend-01.jpg",
             "answer": "shadow fiend",
             "extraLetters": "a"
         },
         {
-            "icon": "emberspirit-lq.png",
-            "image": "emberspirit-01.png",
+            "icon": "emberspirit-lq.jpg",
+            "image": "emberspirit-01.jpg",
             "answer": "ember spirit",
             "extraLetters": "a"
         },
         {
-            "icon": "riki-lq.png",
-            "image": "riki-01.png",
+            "icon": "riki-lq.jpg",
+            "image": "riki-01.jpg",
             "answer": "riki",
             "extraLetters": "alosdtta"
         },
         {
-            "icon": "morphling-lq.png",
-            "image": "morphling-01.png",
+            "icon": "morphling-lq.jpg",
+            "image": "morphling-01.jpg",
             "answer": "morphling",
             "extraLetters": "tyu"
         },
         {
-            "icon": "io-lq.png",
-            "image": "io-01.png",
+            "icon": "io-lq.jpg",
+            "image": "io-01.jpg",
             "answer": "io",
             "extraLetters": "urooizmbss"
         },
         {
-            "icon": "tidehunter-lq.png",
-            "image": "tidehunter-01.png",
+            "icon": "tidehunter-lq.jpg",
+            "image": "tidehunter-01.jpg",
             "answer": "tidehunter",
             "extraLetters": "ae"
         }],
         // ------------------------------------------------ LEVEL 4 ------------------------------------------------------------------------
         
             "level4": [{
-                "icon": "undying-lq.png",
-                "image": "undying-01.png",
+                "icon": "undying-lq.jpg",
+                "image": "undying-01.jpg",
                 "answer": "undying",
                 "extraLetters": "atrin"
             }, {
-                "icon": "wraithking-lq.png",
-                "image": "wraithking-01.png",
+                "icon": "wraithking-lq.jpg",
+                "image": "wraithking-01.jpg",
                 "answer": "wraith king",
                 "extraLetters": "ae",
             },
             {
-                "icon": "sven-lq.png",
-                "image": "sven-01.png",
+                "icon": "sven-lq.jpg",
+                "image": "sven-01.jpg",
                 "answer": "sven",
                 "extraLetters": "ghwituae"
             },
             {
-                "icon": "bountyhunter-lq.png",
-                "image": "bountyhunter-01.png",
+                "icon": "bountyhunter-lq.jpg",
+                "image": "bountyhunter-01.jpg",
                 "answer": "bounty hunter",
                 "extraLetters": ""
             },
             {
-                "icon": "juggernaut-lq.png",
-                "image": "juggernaut-01.png",
+                "icon": "juggernaut-lq.jpg",
+                "image": "juggernaut-01.jpg",
                 "answer": "juggernaut",
                 "extraLetters": "sz"
             },
             {
-                "icon": "earthspirit-lq.png",
-                "image": "earthspirit-01.png",
+                "icon": "earthspirit-lq.jpg",
+                "image": "earthspirit-01.jpg",
                 "answer": "earth spirit",
                 "extraLetters": "a"
             },
             {
-                "icon": "spectre-lq.png",
-                "image": "spectre-01.png",
+                "icon": "spectre-lq.jpg",
+                "image": "spectre-01.jpg",
                 "answer": "spectre",
                 "extraLetters": "trubj"
             },
             {
-                "icon": "underlord-lq.png",
-                "image": "underlord-01.png",
+                "icon": "underlord-lq.jpg",
+                "image": "underlord-01.jpg",
                 "answer": "underlord",
                 "extraLetters": "feo"
             },
             {
-                "icon": "ursa-lq.png",
-                "image": "ursa-01.png",
+                "icon": "ursa-lq.jpg",
+                "image": "ursa-01.jpg",
                 "answer": "ursa",
                 "extraLetters": "onfkawmr"
             },
             {
-                "icon": "broodmother-lq.png",
-                "image": "broodmother-01.png",
+                "icon": "broodmother-lq.jpg",
+                "image": "broodmother-01.jpg",
                 "answer": "broodmother",
                 "extraLetters": "a"
             },
             {
-                "icon": "tiny-lq.png",
-                "image": "tiny-01.png",
+                "icon": "tiny-lq.jpg",
+                "image": "tiny-01.jpg",
                 "answer": "tiny",
                 "extraLetters": "hiuwmfja"
             },
             {
-                "icon": "phoenix-lq.png",
-                "image": "phoenix-01.png",
+                "icon": "phoenix-lq.jpg",
+                "image": "phoenix-01.jpg",
                 "answer": "phoenix",
                 "extraLetters": "iaemh"
             },
             {
-                "icon": "slark-lq.png",
-                "image": "slark-01.png",
+                "icon": "slark-lq.jpg",
+                "image": "slark-01.jpg",
                 "answer": "slark",
                 "extraLetters": "aiuwetm"
             },
             {
-                "icon": "phantomassassin-lq.png",
-                "image": "phantomassassin-01.png",
+                "icon": "phantomassassin-lq.jpg",
+                "image": "phantomassassin-01.jpg",
                 "answer": "phantom assassin",
                 "extraLetters": ""
             },
             {
-                "icon": "brewmaster-lq.png",
-                "image": "brewmaster-01.png",
+                "icon": "brewmaster-lq.jpg",
+                "image": "brewmaster-01.jpg",
                 "answer": "brewmaster",
                 "extraLetters": "ae"
             }]

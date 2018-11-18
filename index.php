@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
-
-    <!-- Latest compiled and minified CSS -->
-    <link href="bootstrapcss/bootstrap.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -77,7 +76,7 @@
             <a href="level.php?level=<?php echo $i?>">
                 <div class="col-lg-6 col-xs-12 col-md-6 order-wrapper order-index" data-nr="0">
                     <div class="order-item bg-dark">
-                        <img src="img/level<?php echo $i?>.png">
+                        <img src="img/level<?php echo $i?>.jpg">
                         <button type="button" class="select-btn hvr-back-pulse levelOneButton">Play</button>
                     </div>
                 </div>
@@ -103,8 +102,8 @@
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/data.js"></script>
-    <script src="bootstrapjs/bootstrap.js"></script>
-    <script src="js/handlebars-v4.0.12.js"></script>
+    <script src="bootstrapjs/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

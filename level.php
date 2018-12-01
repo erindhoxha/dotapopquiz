@@ -119,7 +119,7 @@
     <script id="stage-icon" type="text/x-handlebars-template">
         {{#each this}}
             <div class="stage" data-nr="{{@index}}">
-                <div class="col-lg-3 col-xs-4 col-md-3 order-wrapper">
+                <div class="col-lg-4 col-xs-4 col-md-3 order-wrapper">
                     <div class="order-item" style="position: relative;">
                         {{#if completed}}
                          <img src="img/overlay.png" style="position:absolute;">

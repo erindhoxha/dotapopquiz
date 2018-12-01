@@ -170,7 +170,9 @@ ul {
   border: none;
   color: #fff7f7;
   width: 80%; }
-
+.btn-keyboard:hover {
+  color:black !important;
+}
 #btn-clear {
   background-image: linear-gradient(to right,  #5a0b0a, #ca2811, #612118);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -570,8 +572,8 @@ textarea {
     font-size:23px !important;
   }
   .keyboard-container button {
-    font-size:21.5px !important;
-    height: 50px !important;;
+    font-size:19.5px !important;
+    height: 45px !important;;
   }
   .container-rendered {
     width: 550px; 
@@ -777,12 +779,16 @@ text-align:center;}
   font-weight:500;
   margin-bottom: 10px;
   border: none;
-  width: 100% !important;
+  width: 90% !important;
   float: left; 
   background-color:transparent;
 
 }
-
+#btn-remove {
+  padding-top: 19px;
+  width:10%;
+  float:left;
+}
 #button-check {
   border-radius: 5px;
   background-image: linear-gradient(#13a204 50%, #45a53d 50%);

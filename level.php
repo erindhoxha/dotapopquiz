@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>DotaPopQuiz</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
@@ -50,6 +50,7 @@
             <img class="modal-img">
             <div class="input-check">
             <input type="text" class="answer-input" id="answer-input" placeholder="">
+             <i class="fas fa-backspace" id="btn-remove" style="background-color:transparent;"></i>
             <!-- <img src="img/submit_icon.png"> -->
                 <button type="button" class="btn  btn-light answer-button tada fast animated" id="button-check">Check</button>
                 <i class="fas fa-check-circle check-circle"></i>
@@ -68,7 +69,7 @@
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
         <li class="logo" style="margin-top:7px">
-           <img class="img-responsive" src="img/logo2.png">
+        <h4 style="font-weight:700; color:white;" class="logo">DOTA<span class="active-text">POP</span>QUIZ</h4>
         </li>
         <li><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
@@ -89,13 +90,13 @@
     </ul>
     <!-- SECOND NAV BAR -->
     <!-- ADVERTISEMENT -->
-    <!-- <div class="ad-container text-center">
+    <div class="ad-container text-center">
         <div class="row">
         <div class="col-lg-12">
         <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
         </div>
         </div>
-    </div> -->
+    </div>
     <!-- ADVERTISEMENT -->
     <div class="container container-rendered">
         <div class="row quiz-items" id="stage-container">
@@ -118,7 +119,7 @@
     <script id="stage-icon" type="text/x-handlebars-template">
         {{#each this}}
             <div class="stage" data-nr="{{@index}}">
-                <div class="col-lg-4 col-xs-4 col-md-4 order-wrapper">
+                <div class="col-lg-3 col-xs-4 col-md-3 order-wrapper">
                     <div class="order-item" style="position: relative;">
                         {{#if completed}}
                          <img src="img/overlay.png" style="position:absolute;">
@@ -134,7 +135,6 @@
         {{#each this}}
         <button type="button" class="btn-primary btn-keyboard">{{this}}</button>
         {{/each}}
-        <i class="fas fa-backspace" id="btn-remove" style="background-color:transparent;"></i>
         <button type="button" class="btn-danger btn-md" id="btn-space">Space</button>
         <button type="button" class="btn-danger btn-md" id="btn-clear">Clear All</button>
     </script>
@@ -155,7 +155,7 @@
 
     </script>
     <script src="js/plugins.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/data.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
     <script>

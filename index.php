@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>DotaPopQuiz</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link rel="manifest" href="site.webmanifest">
@@ -25,7 +25,8 @@
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <li><a href="#"><i class="fas fa-cog"></i></a></li>
         <li class="logo" style="margin-top:7px">
-           <img class="img-responsive" src="img/logo2.png">
+        <h4 style="font-weight:700; color:white;" class="logo">DOTA<span class="active-text">POP</span>QUIZ</h4>
+           <!-- <img class="img-responsive" src="img/logo.png"> -->
         </li>
         <li><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
@@ -46,7 +47,6 @@
         </a>
     </ul>
     <!-- SECOND NAV BAR -->
-    <!-- SECOND NAV BAR -->
     <ul class="support-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
 
@@ -64,13 +64,13 @@
     </ul>
 
     <!-- SECOND NAV BAR -->
-    <!-- <div class="ad-container text-center">
+    <div class="ad-container text-center">
         <div class="row">
         <div class="col-lg-12">
         <img class="img-responsive ad-img" src="https://via.placeholder.com/1000x150">
         </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="container container-index">
         <div class="row">
@@ -102,7 +102,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="bootstrapjs/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

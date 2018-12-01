@@ -570,8 +570,8 @@ textarea {
     font-size:23px !important;
   }
   .keyboard-container button {
-    font-size:19.5px !important;
-    height: 45px !important;;
+    font-size:21.5px !important;
+    height: 50px !important;;
   }
   .container-rendered {
     width: 550px; 
@@ -874,6 +874,3 @@ div.panel.show {
   /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */ }
 
 /*# sourceMappingURL=main.css.map */
-.btn-keyboard:hover {
-  color:black !important;
-}

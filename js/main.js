@@ -1,5 +1,4 @@
 // NAV BAR
-var scaled = false;
 
 $(document).ready(function () {
 
@@ -56,6 +55,8 @@ $(document).ready(function () {
             $("#answer-input").val("");
 
         });    
+        var scaled = false;
+
         $(".modal-img").on('click', function() {
             if (scaled == true) {
                 $(".modal-img").css('transform', 'scale(1)');

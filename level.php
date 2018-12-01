@@ -69,7 +69,9 @@
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
         <li class="logo" style="margin-top:7px">
+        <a href="index.php">
         <h4 style="font-weight:700; color:white;" class="logo">DOTA<span class="active-text">POP</span>QUIZ</h4>
+        </a>
         </li>
         <li><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>

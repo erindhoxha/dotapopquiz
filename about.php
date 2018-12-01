@@ -86,7 +86,7 @@
         <div class="panel">Dota 2 is a multiplayer online battle arena video game developed and published by Valve Corporation. For more info, visit <a href="http://blog.dota2.com/" target="_blank">Dota 2 website.</a></div>
 
         <p class="accordion">What if I'm stuck?</p>
-        <div class="panel">You can ask a friend, share it on Facebook, post into Dota 2 groups or alternatively, email us at <a href="mailto:support@dotapopquiz.com">erind.cbh@gmail.com</a>, and we can help you.</div>
+        <div class="panel">You can ask a friend, share it on Facebook, post into Dota 2 groups or alternatively, email us at <a href="mailto:support@dotapopquiz.com">support@dotapopquiz.com</a>, and we can help you.</div>
 
         <p class="accordion">Can I play it on my phone?</p>
         <div class="panel">Absolutely! You can play it on your Phone, Tablet or Desktop. It's responsive for everyone!</div>

@@ -51,11 +51,13 @@
     </div>
 
     <!-- FIRST NAV BAR -->
+        <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
+    <!-- FIRST NAV BAR -->
     <ul class="main-nav">
         <!-- <li class="twitter_bird"><i class="fab fa-twitter"></i></li> -->
         <li><a href="index.php"><i class="fas fa-arrow-left"></i></a></li>
-        <li class="logo">
-            <h3 class="dota-logo">DotaPopQuiz</h3>
+        <li class="logo" style="margin-top:7px">
+           <img class="img-responsive" src="img/logo2.png">
         </li>
         <li><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
@@ -79,10 +81,10 @@
     <div class="container container-panel" style="margin-top:20px;">
 
         <p class="accordion">What is Dota 2?</p>
-        <div class="panel">Dota 2 is a multiplayer online battle arena video game developed and published by Valve Corporation. For more info, visit <a href="http://blog.dota2.com/" target="_blank">Dota 2 website</a></div>
+        <div class="panel">Dota 2 is a multiplayer online battle arena video game developed and published by Valve Corporation. For more info, visit <a href="http://blog.dota2.com/" target="_blank">Dota 2 website.</a></div>
 
         <p class="accordion">What if I'm stuck?</p>
-        <div class="panel">You can ask a friend, share it on Facebook, post into Dota 2 groups or alternatively, email us at <a href="mailto:support@dotapopquiz.com">support@dotapopquiz.com</a>, and we can help you.</div>
+        <div class="panel">You can ask a friend, share it on Facebook, post into Dota 2 groups or alternatively, email us at <a href="mailto:support@dotapopquiz.com">erind.cbh@gmail.com</a>, and we can help you.</div>
 
         <p class="accordion">Can I play it on my phone?</p>
         <div class="panel">Absolutely! You can play it on your Phone, Tablet or Desktop. It's responsive for everyone!</div>
@@ -92,6 +94,10 @@
             Every donation is appreciated, which you can donate via PayPal at <a href="#">DotaPopQuiz Paypal Account</a>
         </div>
 
+        <p class="accordion">How worked on this game?</p>
+        <div class="panel">Erind Hoxha - @erindh <br> Denat Hoxha - @denath</a>
+        </div>
+       <p style="color:white; text-align:center;"> This site is in no way affiliated with Valve Corporation ©. </p>
     </div>
 
 

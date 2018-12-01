@@ -1,25 +1,26 @@
 /* ==========================================================================
     GLOBAL 
    ======================================================================== */
-  @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 select {
   text-overflow: ellipsis !important;
   overflow: hidden !important; }
 
 body.modal-open {
-    overflow: hidden;
-}
-button:focus{
-  outline:none !important;
-  }
+  overflow: hidden; }
+
+button:focus {
+  outline: none !important; }
+
 ul {
   margin: 0; }
+
 .ad-img {
-  margin:0 auto;
-  margin-top:20px;
-}
+  margin: 0 auto;
+  margin-top: 20px; }
+
 h1,
 h2,
 h3,
@@ -28,10 +29,10 @@ h5,
 h6 {
   margin: 0;
   padding: 0; }
-  
+
 .modal-img {
-  width:65%;
-}
+  width: 65%; }
+
 .hide {
   display: none; }
 
@@ -39,9 +40,9 @@ a:hover {
   text-decoration: none; }
 
 .dota-logo {
-  color: #ebebeb; 
-  font-size:16px !important;
-}
+  color: #ebebeb;
+  font-size: 16px !important; }
+
 x
 .active-text {
   color: #c83626 !important; }
@@ -54,7 +55,7 @@ main {
   border-radius: 5px; }
 
 body {
-  background-image:url('../img/bg-pattern.jpg');
+  background-image: url("../img/bg-pattern.jpg");
   background-color: #181818;
   background-position: center no-repeat;
   background-size: cover no-repeat;
@@ -85,23 +86,22 @@ ul {
 
 .main-nav {
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius:5px;
+  border-bottom-right-radius: 5px;
   display: flex;
-  z-index:2;
+  z-index: 2;
   height: 65px;
   align-items: center;
-  justify-content:space-between;
-  width:100%;
-  font-size:15px;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 15px;
   margin: 0;
   padding: 10px;
   background-position: 0;
-  background-image: linear-gradient( to top, #171717, #111111, #040404, #010101 );
+  background-image: linear-gradient(to top, #171717, #111111, #040404, #010101);
   border-bottom: 1px solid #171717;
   /* background-image: linear-gradient(#5a0b0a, #ca2811); */
   /* background-image: linear-gradient(#f7434d, #ff4d57); */
-  outline: none !important;
-  }
+  outline: none !important; }
 
 .main-nav li {
   padding: 20px; }
@@ -116,14 +116,13 @@ ul {
   flex-direction: column;
   text-align: center;
   display: none;
-  margin-top: 0; 
-}
+  margin-top: 0; }
 
 .main-nav-phone li {
   padding: 20px;
   color: #fff7f7;
   list-style: none;
-  background-color:#181818;
+  background-color: #181818;
   border: #2b2b2b 1px solid;
   font-size: 15px;
   font-weight: 500;
@@ -131,6 +130,7 @@ ul {
 
 .main-nav-phone a {
   text-decoration: none; }
+
 .support-nav {
   display: flex;
   flex-direction: column;
@@ -172,14 +172,14 @@ ul {
   width: 80%; }
 
 #btn-clear {
-  background-image: linear-gradient(to right,  #5a0b0a, #ca2811, #612118);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: inset 10px 10px 39px -13px rgba(0,0,0,0.69);
--moz-box-shadow: inset 10px 10px 39px -13px rgba(0,0,0,0.69);
-box-shadow: inset 10px 10px 39px -13px rgba(0,0,0,0.69);
-  border:none;
+  background-image: linear-gradient(to right, #5a0b0a, #ca2811, #612118);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 10px 10px 39px -13px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: inset 10px 10px 39px -13px rgba(0, 0, 0, 0.69);
+  box-shadow: inset 10px 10px 39px -13px rgba(0, 0, 0, 0.69);
+  border: none;
   color: #fff7f7;
   width: 100%; }
 
@@ -210,7 +210,7 @@ html > #body-error {
   TAB BAR
    ========================================================================== */
 .tab-bar {
-  display:none;
+  display: none;
   /* display: flex; */
   position: fixed;
   left: 0;
@@ -267,14 +267,14 @@ html > #body-error {
 
 .select-btn {
   color: #fff7f7;
-  background-image: linear-gradient(to right,  #5a0b0a, #ca2811, #612118);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: inset 10px 10px 39px -13px rgba(0,0,0,0.69);
--moz-box-shadow: inset 10px 10px 39px -13px rgba(0,0,0,0.69);
-box-shadow: inset 10px 10px 39px -13px rgba(0,0,0,0.69);
-  border:0px;
+  background-image: linear-gradient(to right, #5a0b0a, #ca2811, #612118);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 10px 10px 39px -13px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: inset 10px 10px 39px -13px rgba(0, 0, 0, 0.69);
+  box-shadow: inset 10px 10px 39px -13px rgba(0, 0, 0, 0.69);
+  border: 0px;
   /* border: 1px solid #f7434d; */
   /* background-color:#f83a43; */
   padding: 10px;
@@ -459,30 +459,29 @@ textarea {
   animation-iteration-count: infinite;
   background-color: #181818;
   background-color: #181818;
-  color: #fff7f7; 
-}
-@media screen and (min-width: 768px) {
+  color: #fff7f7; }
 
+@media screen and (min-width: 768px) {
   .fa-cog {
-    font-size:20px !important;
-  }
+    font-size: 20px !important; }
+
   .select-btn {
-    font-size:16px !important;
-  }
+    font-size: 16px !important; }
+
   /* .main-nav-phone {
     display: flex;
     flex-direction: row; 
     
   } */
-    .main-nav-phone li {
-      font-size:21px !important;
-    }
+  .main-nav-phone li {
+    font-size: 21px !important; }
+
   .accordion {
-    font-size:14px;
-  }
+    font-size: 14px; }
+
   .panel {
-    font-size:14px !important;
-  }
+    font-size: 14px !important; }
+
   /* .main-nav-phone a {
     flex: 1; 
   } */
@@ -490,158 +489,147 @@ textarea {
     display: none; 
   }  */
   #button-check {
-    height:55px !important;
-  }
+    height: 55px !important; }
+
   #answer-input {
-    height:55px !important;
-    font-size:21px !important;
-  }
+    height: 55px !important;
+    font-size: 21px !important; }
+
   .keyboard-container button {
-    font-size:23px !important;
-    width:40px !important;
-    height:55px !important;
-  }
+    font-size: 23px !important;
+    width: 40px !important;
+    height: 55px !important; }
+
   #btn-clear {
-    width:100% !important;
-  }
+    width: 100% !important; }
+
   .modal-content {
-    width:600px !important;
-  }
+    width: 600px !important; }
+
   .modal-content i {
-    font-size:37px !important;
-  }
+    font-size: 37px !important; }
+
   #button-check {
-    font-size:21px !important;
-  }
+    font-size: 21px !important; }
+
   .support-nav li {
-    font-size:18px !important;
-  }
+    font-size: 18px !important; }
+
   .main-nav {
-    height:65px !important;
-  }
+    height: 65px !important; }
+
   .dota-logo {
-    font-size:21px !important;
-  }
+    font-size: 21px !important; }
+
   .select-btn {
-    height:60px !important;
-    font-size:22px !important;
-  }
-}
+    height: 60px !important;
+    font-size: 22px !important; } }
 @media screen and (min-width: 1024px) {
   .main-nav-phone li {
-    height:55px !important;
-  }
+    height: 55px !important; }
+
   .select-btn {
-    height:45px !important;
-    font-size:17px !important;
-  }
+    height: 45px !important;
+    font-size: 17px !important; }
+
   .container-index {
-        width: 800px !important;
-  }
+    width: 800px !important; }
+
   .close {
-    font-size:30px !important;
-  }
+    font-size: 30px !important; }
+
   .main-nav {
-    height: 60px !important;
-  }
+    height: 60px !important; }
+
   .main-nav-phone li {
-    padding:10px !important;
-    font-size:17px !important;
-  }
-   .support-nav li {
-    font-size:17px !important;
-  }
+    padding: 10px !important;
+    font-size: 17px !important; }
+
+  .support-nav li {
+    font-size: 17px !important; }
+
   .fa-arrow-left {
-    font-size:17px !important;
-  }
+    font-size: 17px !important; }
+
   .tab-bar {
-    display: none; 
-  }
+    display: none; }
+
   .modal-content {
     width: 500px !important;
-    border: none !important; 
-  }
+    border: none !important; }
+
   #button-check {
-    height:40px !important;
-    font-size:17px !important;
-  }
+    height: 40px !important;
+    font-size: 17px !important; }
+
   #answer-input {
-    height:40px !important;
-    font-size:23px !important;
-  }
+    height: 40px !important;
+    font-size: 23px !important; }
+
   .keyboard-container button {
-    font-size:21.5px !important;
-    height: 50px !important;;
-  }
+    font-size: 21.5px !important;
+    height: 50px !important; }
+
   .container-rendered {
-    width: 550px; 
-  } 
+    width: 550px; }
+
   #btn-remove {
-    font-size:20px !important;
-  }
-}
+    font-size: 20px !important; } }
 @media screen and (min-width: 1440px) {
   .modal-content {
-    width:500px !important;;
-  }
+    width: 500px !important; }
+
   #btn-remove {
-    font-size:28px !important;
-  }
-}
+    font-size: 28px !important; } }
 @media screen and (min-width: 992px) {
   .container-rendered {
-    width:650px !important;
+    width: 650px !important; } }
+/* @media screen and (min-width: 1440px) {
+  .modal-content {
+    width: 40% !important;
+    border: none !important; }
+  .keyboard-container button {
+    height:60px !important;
+    font-size:20px !important;
   }
-}
+  #answer-input {
+    height:60px !important;
+  }
+  #button-check {
+    height:55px !important;
+  }
+} */
+/* @media screen and (min-width: 1680px) {
+  .modal-content {
+    width: 25% !important;
+    border: none !important; }
+  .keyboard-container button {
+    height:50px !important;
+    font-size:20px !important;
+  }
+  #answer-input {
+    height:50px !important;
+    font-size:20px !important;
+  }
+  #button-check {
+    height:50px !important;
+    font-size:20px !important;
+  }
+  .modal-content i {
+    font-size:38px !important;
+  }
+  .main-nav {
+    height: 65px !important;
+    font-size:20px !important;
+  }
+  .fa-arrow-left {
+    font-size:20px !important;
+  }
+  .main-nav-phone li {
+    font-size:20px !important;
+  }
 
-    /* @media screen and (min-width: 1440px) {
-      .modal-content {
-        width: 40% !important;
-        border: none !important; }
-      .keyboard-container button {
-        height:60px !important;
-        font-size:20px !important;
-      }
-      #answer-input {
-        height:60px !important;
-      }
-      #button-check {
-        height:55px !important;
-      }
-    } */
-    /* @media screen and (min-width: 1680px) {
-      .modal-content {
-        width: 25% !important;
-        border: none !important; }
-      .keyboard-container button {
-        height:50px !important;
-        font-size:20px !important;
-      }
-      #answer-input {
-        height:50px !important;
-        font-size:20px !important;
-      }
-      #button-check {
-        height:50px !important;
-        font-size:20px !important;
-      }
-      .modal-content i {
-        font-size:38px !important;
-      }
-      .main-nav {
-        height: 65px !important;
-        font-size:20px !important;
-      }
-      .fa-arrow-left {
-        font-size:20px !important;
-      }
-      .main-nav-phone li {
-        font-size:20px !important;
-      }
-    
-    } */
-
-
+} */
 @media screen and (max-width: 350px) {
   .order-item h5 {
     display: none; }
@@ -671,9 +659,9 @@ textarea {
 
 /* Modal Content/Box */
 .modal-content {
-  border-radius:0px;
-  background-color:rgba(0, 0, 0, 0.90);
-  border:none !important;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none !important;
   margin: 5% auto;
   /* 15% from the top and centered */
   padding: 0px 20px 20px 20px;
@@ -697,15 +685,14 @@ textarea {
   cursor: pointer; }
 
 .modal-content {
-  color: black; 
-text-align:center;}
+  color: black;
+  text-align: center; }
 
 .modal-content img {
-  width: 55%; 
-  clear:both;
-  display:block;
-  margin:0 auto;
-}
+  width: 55%;
+  clear: both;
+  display: block;
+  margin: 0 auto; }
 
 .modal-content i {
   font-size: 20px;
@@ -740,21 +727,19 @@ text-align:center;}
 .keyboard-container button {
   color: #333333;
   font-weight: 500 !important;
-  background-color:white;
-  color:black;
+  background-color: white;
+  color: black;
   background-image: linear-gradient(#ffffff 50%, #e2e2e2 50%);
   /* background-image: linear-gradient(#5a0b0a, #ca2811); */
   /* background-color:transparent; */
   border: 0.5px solid #fff7f7;
-  border:0px;
-  border-radius:5px;
-  color:black;
-  font-size:17px;
+  border: 0px;
+  border-radius: 5px;
+  color: black;
+  font-size: 17px;
   margin: 2px;
   height: 36px;
   width: 36px; }
-
-
 
 .input-check {
   width: 100%;
@@ -772,16 +757,14 @@ text-align:center;}
   border-radius: 5px;
   height: 40px;
   font-size: 15px;
-  color:#fff7f7  !important;
-  border:2px solid #fff7f7 !important;
-  font-weight:500;
+  color: #fff7f7  !important;
+  border: 2px solid #fff7f7 !important;
+  font-weight: 500;
   margin-bottom: 10px;
   border: none;
   width: 100% !important;
-  float: left; 
-  background-color:transparent;
-
-}
+  float: left;
+  background-color: transparent; }
 
 #button-check {
   border-radius: 5px;
@@ -789,7 +772,7 @@ text-align:center;}
   color: #fff7f7;
   width: 100%;
   float: left;
-  height:40px;
+  height: 40px;
   /* margin-top: 10px; */
   /* margin-left: 2%; */
   margin-bottom: 10px; }
@@ -843,22 +826,22 @@ p.accordion.active-acc:after {
 
 /* Style the element that is used for the panel class */
 #btn-space {
-  background-image:none !important;
-  background-color:white !important;
-  border:1px solid white;
-  color:black !important;
-  margin-top:10px;
-  width: 100% !important;
- }
+  background-image: none !important;
+  background-color: white !important;
+  border: 1px solid white;
+  color: black !important;
+  margin-top: 10px;
+  width: 100% !important; }
+
 .btn-danger:focus, .btn-danger:focus:hover {
-  background-color:transparent !important;
-  color:#fff7f7 !important;
-  border-color:#fff7f7 !important;
-}
+  background-color: transparent !important;
+  color: #fff7f7 !important;
+  border-color: #fff7f7 !important; }
+
 .btn-danger:hover {
-  background-color:#fff7f7 !important;
-  color:black !important;
-}
+  background-color: #fff7f7 !important;
+  color: black !important; }
+
 div.panel {
   padding: 0 18px;
   background-color: black;
@@ -872,5 +855,7 @@ div.panel.show {
   opacity: 1;
   max-height: 500px;
   /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */ }
+
+/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

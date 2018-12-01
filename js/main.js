@@ -1,4 +1,5 @@
 // NAV BAR
+var scaled = false;
 
 $(document).ready(function () {
 
@@ -55,7 +56,17 @@ $(document).ready(function () {
             $("#answer-input").val("");
 
         });    
-        
+        $(".modal-img").on('click', function() {
+            if (scaled == true) {
+                $(".modal-img").css('transform', 'scale(1)');
+                $(".input-check").css('z-index', '0');
+                scaled = false;
+            } else {
+                $(".modal-img").css('transform', 'scale(1.4)');
+                $(".input-check").css('z-index', '-1');
+                scaled = true;
+            }
+        });
 
 
         $("#btn-remove").on('click', function() {

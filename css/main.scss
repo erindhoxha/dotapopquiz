@@ -7,6 +7,9 @@
 select {
   text-overflow: ellipsis !important;
   overflow: hidden !important; }
+.modal-img {
+  transition:0.3s;
+}
 
 body.modal-open {
     overflow: hidden;

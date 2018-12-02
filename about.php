@@ -96,7 +96,7 @@
             Every donation is appreciated, which you can donate via PayPal at <a href="#">DotaPopQuiz Paypal Account</a>
         </div>
 
-        <p class="accordion">How worked on this game?</p>
+        <p class="accordion">Credits</p>
         <div class="panel">Erind Hoxha - @erindh <br> Denat Hoxha - @denath</a>
         </div>
        <p style="color:white; text-align:center;"> This site is in no way affiliated with Valve Corporation ©. </p>
